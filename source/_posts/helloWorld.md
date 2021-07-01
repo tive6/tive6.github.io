@@ -84,7 +84,7 @@ alert('Hello Word !');
 ```
 ---
 #### 而我。。。ing...
-<a href="http;/zmnaer.com" alt="zmnaer"><img src="http://ohecg7vrp.bkt.clouddn.com/06.jpg" width="200" title="WEB前端"/></a>
+<a href="//tiven.cn" alt="tiven"><img src="//tiven.cn/logo.png" width="200" title="WEB前端"/></a>
 * 感谢阅读，让我们一起来开启大牛之路吧！
 >> come on -0.0-
 

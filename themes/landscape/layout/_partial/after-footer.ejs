@@ -3,8 +3,8 @@
   var disqus_shortname = '<%= config.disqus_shortname %>';
   <% if (page.permalink){ %>
   var disqus_url = '<%= page.permalink %>';
-  <% } %>
-  (function(){
+  <% }; %>
+  (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
@@ -12,13 +12,9 @@
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
-<% } %>9
-
-<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
-
-<% if (theme.fancybox){ %>
-<%- css('fancybox/jquery.fancybox') %>
-<%- js('fancybox/jquery.fancybox.pack') %>
 <% } %>
 
-<%- js('js/script') %>
+<script src="//lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+
+<% if (theme.fancybox){ %> <%- css("fancybox/jquery.fancybox") %> <%-
+js("fancybox/jquery.fancybox.pack") %> <% } %> <%- js("js/script") %>

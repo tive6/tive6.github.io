@@ -1,7 +1,7 @@
 # 个人博客
 
-欢迎访问：[zmnaer](http://zmnaer.com "zmnaer")
+欢迎访问：[tiven](//tiven.cn "tiven")
 
 ¤(づ｡◕‿‿◕｡)♪(｡◕‿‿◕｡づ)¤
 
-![zmnaer](http://ohecg7vrp.bkt.clouddn.com/004.jpg "blog")
+![tiven](//tiven.cn/logo.png "blog")

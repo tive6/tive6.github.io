@@ -6,7 +6,7 @@ menu:
 ##  标签: /tag
 ##  标签云: /tagcloud
 rss: /atom.xml
-Sitemap: /sitemap.xml
+sitemap: /sitemap.xml || sitemap
 
 # Content
 #  查看更多 Read More
@@ -44,7 +44,7 @@ show_count: true
 
 # Miscellaneous
 # ico图片
-favicon: http://ohecg7vrp.bkt.clouddn.com/favicon.ico
+favicon: /favicon.ico
 google_analytics:
 twitter:
 google_plus:

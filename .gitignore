@@ -1,8 +1,9 @@
 .DS_Store
 .porject
 .idea
+.vscode
 .node_modules/
 .git
 .deploy_git
-/node_modules/
-/public/
+node_modules/
+public/

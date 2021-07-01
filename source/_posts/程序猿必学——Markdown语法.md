@@ -36,12 +36,12 @@ tags:
 ### 无序（ul）列表
 **md写法：**
         * 昵称：青春^O^无限
-        * 别名：松枫
-        * 英文名：zmnaer
+        * 别名：天問
+        * 英文名：tiven
 **结果显示：**
 * 昵称：青春^O^无限
-* 别名：松枫
-* 英文名：zmnaer
+* 别名：天問
+* 英文名：tiven
 ----
 ### 有序（ol）列表
 * 一个`数字`+`.`+`内容`
@@ -74,28 +74,28 @@ tags:
 ### 一个带有title属性的图片（img标签）
 **md写法：**
 
-        ![IMG](http://ohecg7vrp.bkt.clouddn.com/01.jpg "Hello")
+        ![IMG](//tiven.cn/logo.png "Hello")
 **结果显示：**
-![IMG](http://ohecg7vrp.bkt.clouddn.com/01.jpg "Hello")
+![IMG](//tiven.cn/logo.png "Hello")
 
 ---
 ### 一个超链接（a标签）
 **md写法：**
 
-        [个人博客](http://zmnaer.com "zmnaer个人博客")
+        [个人博客](http://tiven.cn "tiven个人博客")
 **结果显示：**
-[个人博客](http://zmnaer.com "zmnaer个人博客")
+[个人博客](//tiven.cn "tiven个人博客")
 
 ---
 
 ### 一个有超链接的图片
 **md写法：**
 
-        [![zmnaer]](http://zmnaer.com)
-        [zmnaer]:http://ohecg7vrp.bkt.clouddn.com/14.gif "blog"
+        [![tiven]](//tiven.cn)
+        [tiven]://tiven.cn/logo.png "blog"
 **结果显示：**
-[![zmnaer]](http://zmnaer.com)
-[zmnaer]:http://ohecg7vrp.bkt.clouddn.com/14.gif "blog"
+[![tiven]](//tiven.cn)
+[tiven]://tiven.cn/logo.png "blog"
 
 ---
 ### 换行符（br）

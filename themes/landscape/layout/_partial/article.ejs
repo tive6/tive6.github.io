@@ -1,61 +1,70 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-    <div class="article-meta">
-        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-        <%- partial('post/category') %>
-    </div>
-    <div class="article-inner">
-        <%- partial('post/gallery') %>
-        <% if (post.link || post.title){ %>
-        <header class="article-header">
-            <%- partial('post/title', {class_name: 'article-title'}) %>
-            <hr style="border:none;border-bottom:1px solid #ddd"/>
-        </header>
-        <% } %>
-        <div class="article-entry" itemprop="articleBody">
-            <% if (post.excerpt && index){ %>
-            <%- post.excerpt %>
-            <% if (theme.excerpt_link){ %>
-            <p class="article-more-link">
-                <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-            </p>
-            <% } %>
-            <% } else { %>
-            <%- post.content %>
-            <% } %>
-        </div>
-        <footer class="article-footer">
-            <%- partial('post/tag') %>
-
-
-            <!-- jiathis分享 -->
-            <% if (!index){ %>
-            <%-partial('post/jiathis')%>
-            <% } %>
-
-            <% if (post.comments && config.disqus_shortname){ %>
-            <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
-            <% } %>
-
-        </footer>
-    </div>
-    <% if (!index){ %>
-    <%- partial('post/nav') %>
+<article
+  id="<%= post.layout %>-<%= post.slug %>"
+  class="article article-type-<%= post.layout %>"
+  itemscope
+  itemprop="blogPost"
+>
+  <div class="article-meta">
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <%- partial('post/category') %>
+  </div>
+  <div class="article-inner">
+    <%- partial('post/gallery') %> <% if (post.link || post.title){ %>
+    <header class="article-header">
+      <%- partial('post/title', {class_name: 'article-title'}) %>
+      <hr style="border: none; border-bottom: 1px solid #ddd" />
+    </header>
     <% } %>
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %> <%- post.excerpt %> <% if
+      (theme.excerpt_link){ %>
+      <p class="article-more-link">
+        <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+      </p>
+      <% } %> <% } else { %> <%- post.content %> <% } %>
+    </div>
+    <footer class="article-footer">
+      <%- partial('post/tag') %>
 
-    <!-- 增加打赏功能 -->
+      <!-- jiathis分享 -->
+      <% if (!index){ %> <%-partial('post/jiathis')%> <% } %> <% if
+      (post.comments && config.disqus_shortname){ %>
+      <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"
+        ><%= __('comment') %></a
+      >
+      <% } %>
+    </footer>
+  </div>
+  <% if (!index){ %> <%- partial('post/nav') %> <% } %>
+
+  <!-- 增加打赏功能 -->
 </article>
 
 <% if (!index && post.comments){ %>
 
 <section id="comments">
-    <!-- 友言 start -->
-    <div id="ds-thread" class="ds-thread" data-thread-key="<%= post.path %>" data-title="<%= post.title %>" data-url="<%= post.permalink %>"></div>
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127864"></script>
-    <!-- UY END -->
+  <!-- 友言 start -->
+  <div
+    id="ds-thread"
+    class="ds-thread"
+    data-thread-key="<%= post.path %>"
+    data-title="<%= post.title %>"
+    data-url="<%= post.permalink %>"
+  ></div>
+  <!-- UY BEGIN -->
+  <div id="uyan_frame"></div>
+  <script
+    type="text/javascript"
+    src="http://v2.uyan.cc/code/uyan.js?uid=2127864"
+  ></script>
+  <!-- UY END -->
 </section>
 
-<div style="text-align: center"><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv" style="color: red;"></span>次</span></div>
+<div style="text-align: center">
+  <span id="busuanzi_container_site_pv"
+    >总访问量<span id="busuanzi_value_site_pv" style="color: red"></span
+    >次</span
+  >
+</div>
 
 <% } %>

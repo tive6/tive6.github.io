@@ -1,0 +1,13 @@
+.vscode
+.git
+.deploy_git
+public/**
+fancybox/
+fonts/
+
+*.xml
+*.yml
+*.md
+*.svg
+*.txt
+*.json

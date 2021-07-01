@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!--百度抓取验证-->
-  <meta name="baidu-site-verification" content="9VUSURlchs" />
-  <!--定义网页的描述说明信息-->
-  <meta name="description" content="zmnaer.com是一个基于hexo强力驱动，采用github云仓库，自定义域名自主搭建的个人博客，致力于与广大程序猿共同探讨代码的奥秘，分享编程的乐趣。" />
-  <!--定义网页的关键字，供搜索引擎搜索-->
-  <meta name="keywords" content="zmnaer.com 松枫 hexo blog 博客 web 前端 HTML CSS H5 javascript JS nodejs node github coding" />
-  <!--设置网页作者-->
-  <meta name="author" content="zmnaer" />
-  <!--设置网页版权-->
-  <meta name="copyright" content="zmnaer" />
-  <!--设置创建时间-->
-  <meta name="date" content="2016年10月" />
-  
-  <title>学习webpack原来就是SoEasy | zmnaer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--百度抓取验证-->
+    <meta name="baidu-site-verification" content="9VUSURlchs">
+    <!--定义网页的描述说明信息-->
+    <meta name="description" content="tiven.com是一个基于hexo强力驱动，采用github云仓库，自定义域名自主搭建的个人博客，致力于与广大程序猿共同探讨代码的奥秘，分享编程的乐趣。">
+    <!--定义网页的关键字，供搜索引擎搜索-->
+    <meta name="keywords" content="tiven.cn 松枫 hexo blog 博客 web 前端 HTML CSS H5 javascript JS nodejs node github coding">
+    <!--设置网页作者-->
+    <meta name="author" content="tiven">
+    <!--设置网页版权-->
+    <meta name="copyright" content="tiven">
+    <!--设置创建时间-->
+    <meta name="date" content="2016年10月">
+    
+    <title>
+        
+          学习webpack原来就是SoEasy |
+        
+        天問</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
+<meta name="keywords" content="js,webpack,前端优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习webpack原来就是SoEasy">
 <meta property="og:url" content="https://zm-1006.github.io/2017/03/14/学习Webpack原来就是SoEasy/index.html">
-<meta property="og:site_name" content="zmnaer">
+<meta property="og:site_name" content="天問">
 <meta property="og:description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
-<meta property="og:image" content="http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg">
-<meta property="og:updated_time" content="2017-03-17T03:48:46.382Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2021-07-01T04:07:01.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习webpack原来就是SoEasy">
 <meta name="twitter:description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
-<meta name="twitter:image" content="http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="zmnaer" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="http://ohecg7vrp.bkt.clouddn.com/favicon.ico">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+    
+        <link rel="alternate" href="/atom.xml" title="天問" type="application/atom+xml">
+    
+    
+        <link rel="icon" href="/favicon.ico">
+    
+    
+        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="/css/style.css"> 
 
 
     <!--百度统计-->
     
 <script>
-    /*#你的百度统计代码*/
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?d053c375a2cb1b45a85c0dcf267d6c48";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+  /*#你的百度统计代码*/
+  var _hmt = _hmt || []
+  ;(function () {
+    var hm = document.createElement('script')
+    hm.src = 'https://hm.baidu.com/hm.js?d053c375a2cb1b45a85c0dcf267d6c48'
+    var s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(hm, s)
+  })()
 </script>
 
 
 </head>
+</html>
 
 <body>
 <div id="container">
@@ -66,73 +70,87 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">zmnaer</a>
+        <a href="/" id="logo">天問</a>
       </h1>
       
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">做人如果没梦想，跟咸鱼有什么分别</a>
-        </h2>
+      <h2 id="subtitle-wrap">
+        <a href="/" id="subtitle">做人如果没梦想，跟咸鱼有什么分别</a>
+      </h2>
       
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/">主页</a>
+        <a class="main-nav-link" href="/"
+          >主页</a
+        >
         
-          <a class="main-nav-link" href="/archives">归类</a>
+        <a class="main-nav-link" href="/archives"
+          >归类</a
+        >
         
-          <a class="main-nav-link" href="/about">关于</a>
+        <a class="main-nav-link" href="/about"
+          >关于</a
+        >
         
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <a
+          id="nav-rss-link"
+          class="nav-icon"
+          href="/atom.xml"
+          title="RSS Feed"
+        ></a>
         
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zm-1006.github.io"></form>
-      </div>
+      <div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zm-1006.github.io"></form></div>
     </div>
   </div>
 </header>
-        <div class="outer">
-            <section id="main"><article id="post-学习Webpack原来就是SoEasy" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-meta">
-        <a href="/2017/03/14/学习Webpack原来就是SoEasy/" class="article-date">
-  <time datetime="2017-03-14T03:41:38.000Z" itemprop="datePublished">2017-03-14</time>
-</a>
-        
-    </div>
-    <div class="article-inner">
-        
-        
-        <header class="article-header">
-            
-  
-    <h1 class="article-title" itemprop="name">
-      学习webpack原来就是SoEasy
-    </h1>
-  
 
-            <hr style="border:none;border-bottom:1px solid #ddd"/>
-        </header>
-        
-        <div class="article-entry" itemprop="articleBody">
-            
-            <p>在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的<code>模块化</code>和一系列前端优化工具，<a href="https://webpack.js.org/" target="_blank" rel="external">webpack</a>就是优化工具其中之一。<br><a id="more"></a><br><a href="https://webpack.js.org" target="_blank" rel="external"><img src="http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg" alt="webpack" title="blog"></a></p>
-<p><code>webpack</code>是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。本文就简单介绍webpack的基本使用和<code>config</code>配置。<br><strong><em>前提：</em></strong>windows下<code>node</code>和<code>npm</code>环境已经配置OK，<code>cmd命令行</code>中<code>node -v</code>和<code>npm -v</code>都能正常显示版本。</p>
+        <div class="outer">
+            <section id="main"><article
+  id="post-学习Webpack原来就是SoEasy"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+>
+  <div class="article-meta">
+    <a href="/2017/03/14/学习Webpack原来就是SoEasy/" class="article-date">
+  <time datetime="2017-03-14T03:41:38.000Z" itemprop="datePublished"
+    >2017-03-14</time
+  >
+</a>
+
+    
+
+  </div>
+  <div class="article-inner">
+    
+ 
+    <header class="article-header">
+       
+<h1 class="article-title" itemprop="name">学习webpack原来就是SoEasy</h1>
+ 
+
+      <hr style="border: none; border-bottom: 1px solid #ddd" />
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+       <p>在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的<code>模块化</code>和一系列前端优化工具，<a href="https://webpack.js.org/" target="_blank" rel="noopener">webpack</a>就是优化工具其中之一。<br><a id="more"></a><br><a href="https://webpack.js.org" target="_blank" rel="noopener">![webpack]</a><br>[webpack]:<a href="http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg" target="_blank" rel="noopener">http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg</a> “blog”<br><code>webpack</code>是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。本文就简单介绍webpack的基本使用和<code>config</code>配置。<br><strong><em>前提：</em></strong>windows下<code>node</code>和<code>npm</code>环境已经配置OK，<code>cmd命令行</code>中<code>node -v</code>和<code>npm -v</code>都能正常显示版本。</p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><hr>
 <ul>
 <li><p>全局安装</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -g webpack</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g webpack</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>项目跟目录下创建<code>package.json</code>文件</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>项目<code>根目录</code>下安装webpack包依赖</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i webpack --save-dev    //执行命令后一路enter键就OK</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i webpack --save-dev    //执行命令后一路enter键就OK</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>示例目录结构：</p>
 <pre><code>demo/                       根目录
@@ -148,26 +166,26 @@
     package.json            项目的基本信息、依赖包的版本
 </code></pre></li>
 <li><p>entry.js</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 引入app.js</span></div><div class="line"><span class="keyword">var</span> str = <span class="built_in">require</span>(<span class="string">'./b.js'</span>);</div><div class="line"><span class="comment">// 引入外部样式表</span></div><div class="line"><span class="comment">// 没有配置config的加载css的写法</span></div><div class="line"><span class="comment">/*require('!style-loader!css-loader!./css/style.css');*/</span></div><div class="line"><span class="comment">// 配置config之后的写法</span></div><div class="line"><span class="built_in">require</span>(<span class="string">'./css/style.css'</span>);</div><div class="line"><span class="built_in">document</span>.body.innerHTML = <span class="string">'&lt;h1&gt;'</span>+str+<span class="string">'&lt;/h1&gt;'</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入app.js</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="built_in">require</span>(<span class="string">'./b.js'</span>);</span><br><span class="line"><span class="comment">// 引入外部样式表</span></span><br><span class="line"><span class="comment">// 没有配置config的加载css的写法</span></span><br><span class="line"><span class="comment">/*require('!style-loader!css-loader!./css/style.css');*/</span></span><br><span class="line"><span class="comment">// 配置config之后的写法</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./css/style.css'</span>);</span><br><span class="line"><span class="built_in">document</span>.body.innerHTML = <span class="string">'&lt;h1&gt;'</span>+str+<span class="string">'&lt;/h1&gt;'</span>;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>b.js</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = <span class="string">'zmnaer.com'</span>;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="string">'zmnaer.com'</span>;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>style.css</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h1&#123;</div><div class="line">    color: #f00;</div><div class="line">    font-size: 40px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">h1&#123;</span><br><span class="line">    color: #f00;</span><br><span class="line">    font-size: <span class="number">40</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>reset.css</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">*&#123;</div><div class="line">    margin: 0;</div><div class="line">    padding: 0;</div><div class="line">&#125;</div><div class="line">body&#123;</div><div class="line">    background: #eee;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">    margin: <span class="number">0</span>;</span><br><span class="line">    padding: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">    background: #eee;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>执行打包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">webpack app/entry build/build.js</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webpack app/entry build/build.js</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>执行结束后就会在<code>build</code>文件夹中生成打包后的<code>build.js</code>。</p>
 <hr>
 <h1 id="webpack的config配置"><a href="#webpack的config配置" class="headerlink" title="webpack的config配置"></a>webpack的<code>config</code>配置</h1><p>在根目录下新建<code>webpack-config.js</code>，之后可在命令中直接输入<code>webpack</code>执行打包。</p>
 <ul>
-<li>配置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</div><div class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="attr">entry</span>:<span class="string">'./app/entry.js'</span>, <span class="comment">// 输出文件入口</span></div><div class="line">    output:&#123;    <span class="comment">// 输出路径</span></div><div class="line">        path:__dirname, <span class="comment">// 取得当前目录路径</span></div><div class="line">        filename:<span class="string">'./build/build.js'</span> <span class="comment">// 输出文件路径、文件名</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">module</span>:&#123;    <span class="comment">// 加载模块插件</span></div><div class="line">        loaders:[   <span class="comment">// 加载器 插件</span></div><div class="line">            &#123;</div><div class="line">                <span class="attr">test</span>:<span class="regexp">/\.css$/</span>,  <span class="comment">// 正则匹配css文件</span></div><div class="line">                loader:[<span class="string">'style-loader'</span>,<span class="string">'css-loader'</span>],   <span class="comment">// style css 加载器，顺序不能颠倒，有依赖关系</span></div><div class="line">                exclude:<span class="string">'/node_module/'</span> <span class="comment">// 排除的文件夹</span></div><div class="line">                <span class="comment">/*include:'/app/'       // 多个就用数组*/</span></div><div class="line">            &#125;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">resolve</span>:&#123;</div><div class="line">        <span class="attr">extensions</span>:[<span class="string">''</span>,<span class="string">'.css'</span>,<span class="string">'.js'</span>,<span class="string">'.jsx'</span>]</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">plugins</span>:[   <span class="comment">//插件</span></div><div class="line">        <span class="keyword">new</span> webpack.BannerPlugin(<span class="string">'This file is created by auto'</span>)</div><div class="line">    ]</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<li>配置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    entry:<span class="string">'./app/entry.js'</span>, <span class="comment">// 输出文件入口</span></span><br><span class="line">    output:&#123;    <span class="comment">// 输出路径</span></span><br><span class="line">        path:__dirname, <span class="comment">// 取得当前目录路径</span></span><br><span class="line">        filename:<span class="string">'./build/build.js'</span> <span class="comment">// 输出文件路径、文件名</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="built_in">module</span>:&#123;    <span class="comment">// 加载模块插件</span></span><br><span class="line">        loaders:[   <span class="comment">// 加载器 插件</span></span><br><span class="line">            &#123;</span><br><span class="line">                test:<span class="regexp">/\.css$/</span>,  <span class="comment">// 正则匹配css文件</span></span><br><span class="line">                loader:[<span class="string">'style-loader'</span>,<span class="string">'css-loader'</span>],   <span class="comment">// style css 加载器，顺序不能颠倒，有依赖关系</span></span><br><span class="line">                exclude:<span class="string">'/node_module/'</span> <span class="comment">// 排除的文件夹</span></span><br><span class="line">                <span class="comment">/*include:'/app/'       // 多个就用数组*/</span></span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    resolve:&#123;</span><br><span class="line">        extensions:[<span class="string">''</span>,<span class="string">'.css'</span>,<span class="string">'.js'</span>,<span class="string">'.jsx'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    plugins:[   <span class="comment">//插件</span></span><br><span class="line">        <span class="keyword">new</span> webpack.BannerPlugin(<span class="string">'This file is created by auto'</span>)</span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
@@ -176,7 +194,7 @@
 <li>只有一个入口文件时：是一个字符串，如：<code>entry:&#39;./app/entry.js&#39;</code></li>
 <li>有两个及以上入口文件时：是一个对象<ul>
 <li>a. 是数组时，是将多个模块打包成一个模块。依赖性最高的放在最后，如：<code>entry:[&quot;./app/a.js&quot;,&quot;.app/b.js&quot;]</code></li>
-<li>b. 是键值对时，是需要分别打包多个模块，如：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">entry:&#123;</div><div class="line">    module1:<span class="string">'./app/a.js'</span>,</div><div class="line">    module2:<span class="string">'./app/b.js'</span>,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>b. 是键值对时，是需要分别打包多个模块，如：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">entry:&#123;</span><br><span class="line">    module1:<span class="string">'./app/a.js'</span>,</span><br><span class="line">    module2:<span class="string">'./app/b.js'</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -254,7 +272,7 @@ postcss:{
 <h3 id="2、BannerPlugin"><a href="#2、BannerPlugin" class="headerlink" title="2、BannerPlugin"></a>2、BannerPlugin</h3><ul>
 <li>这个插件能在打包后的js文件开头位置增加一个<code>头注释</code>。配置:<pre><code>plugins:[new webpack.BannerPlugin(&apos;webpack file by zm.&apos;)]
 </code></pre></li>
-<li>更多请参考：<a href="http://webpack.github.io/docs/using-plugins.html" target="_blank" rel="external">官网Plugins</a></li>
+<li>更多请参考：<a href="http://webpack.github.io/docs/using-plugins.html" target="_blank" rel="noopener">官网Plugins</a></li>
 </ul>
 <hr>
 <h2 id="四、webpack-dev-server"><a href="#四、webpack-dev-server" class="headerlink" title="四、webpack-dev-server"></a>四、webpack-dev-server</h2><p>webpack-dev-server是一个轻量级的服务器，修改文件源码后，自动刷新页面将修改同步到页面上。</p>
@@ -304,219 +322,245 @@ webpack --config webpack.react.config.js    // 针对react
 <ul>
 <li>参考文档：</li>
 </ul>
-<ol>
-<li><a href="http://webpack.github.io/docs/" target="_blank" rel="external">http://webpack.github.io/docs/</a></li>
-<li><a href="https://webpack.js.org/" target="_blank" rel="external">https://webpack.js.org/</a></li>
-<li><a href="http://webpackdoc.com/" target="_blank" rel="external">http://webpackdoc.com/</a></li>
-<li><a href="http://www.cnblogs.com/haogj/p/5160821.html" target="_blank" rel="external">http://www.cnblogs.com/haogj/p/5160821.html</a></li>
-<li><a href="http://www.jb51.net/article/96646.htm" target="_blank" rel="external">http://www.jb51.net/article/96646.htm</a></li>
+<ol start="0">
+<li><a href="http://webpack.github.io/docs/" target="_blank" rel="noopener">http://webpack.github.io/docs/</a></li>
+<li><a href="https://webpack.js.org/" target="_blank" rel="noopener">https://webpack.js.org/</a></li>
+<li><a href="http://webpackdoc.com/" target="_blank" rel="noopener">http://webpackdoc.com/</a></li>
+<li><a href="http://www.cnblogs.com/haogj/p/5160821.html" target="_blank" rel="noopener">http://www.cnblogs.com/haogj/p/5160821.html</a></li>
+<li><a href="http://www.jb51.net/article/96646.htm" target="_blank" rel="noopener">http://www.jb51.net/article/96646.htm</a></li>
 </ol>
 <ul>
 <li>不甚详细，多多包涵 ^-O=O-^</li>
 </ul>
-
-            
-        </div>
-        <footer class="article-footer">
-            
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端优化/">前端优化</a></li></ul>
-
-
-
-            <!-- jiathis分享 -->
-            
-            <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style" style="overflow: hidden;float: right">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_renren"></a>
-    <a class="jiathis_button_douban"></a>
-    <a class="jiathis_button_cqq"></a>
-    <a class="jiathis_button_ishare"></a>
-    <a href="http://www.jiathis.com/share?uid=2127864" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-    var jiathis_config={
-        data_track_clickback:true,
-        summary:"",
-        shortUrl:false,
-        hideMore:false
-    }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2127864" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-            
-
-            
-
-        </footer>
+ 
     </div>
-    
-    
+    <footer class="article-footer">
+       <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端优化/">前端优化</a></li></ul> 
+
+
+      <!-- jiathis分享 -->
+       <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="overflow: hidden; float: right">
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_ishare"></a>
+  <a
+    href="//www.jiathis.com/share?uid=2127864"
+    class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"
+    target="_blank"
+  ></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config = {
+    data_track_clickback: true,
+    summary: '',
+    shortUrl: false,
+    hideMore: false,
+  }
+</script>
+<script
+  type="text/javascript"
+  src="//v3.jiathis.com/code_mini/jia.js?uid=2127864"
+  charset="utf-8"
+></script>
+<!-- JiaThis Button END -->
+  
+    </footer>
+  </div>
+   
 <nav id="article-nav">
   
-    <a href="/2017/03/16/seaJs模块化开发简单入门/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          seaJs模块化开发简单入门
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/03/10/原生js获取css样式/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">原生js获取css样式</div>
-    </a>
+  <a
+    href="/2017/03/16/seaJs模块化开发简单入门/"
+    id="article-nav-newer"
+    class="article-nav-link-wrap"
+  >
+    <strong class="article-nav-caption">上一篇</strong>
+    <div class="article-nav-title">
+       seaJs模块化开发简单入门 
+    </div>
+  </a>
+   
+  <a
+    href="/2017/03/10/原生js获取css样式/"
+    id="article-nav-older"
+    class="article-nav-link-wrap"
+  >
+    <strong class="article-nav-caption">下一篇</strong>
+    <div class="article-nav-title">原生js获取css样式</div>
+  </a>
   
 </nav>
 
-    
+ 
 
-    <!-- 增加打赏功能 -->
+  <!-- 增加打赏功能 -->
 </article>
 
 
 
 <section id="comments">
-    <!-- 友言 start -->
-    <div id="ds-thread" class="ds-thread" data-thread-key="2017/03/14/学习Webpack原来就是SoEasy/" data-title="学习webpack原来就是SoEasy" data-url="https://zm-1006.github.io/2017/03/14/学习Webpack原来就是SoEasy/"></div>
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127864"></script>
-    <!-- UY END -->
+  <!-- 友言 start -->
+  <div
+    id="ds-thread"
+    class="ds-thread"
+    data-thread-key="2017/03/14/学习Webpack原来就是SoEasy/"
+    data-title="学习webpack原来就是SoEasy"
+    data-url="https://zm-1006.github.io/2017/03/14/学习Webpack原来就是SoEasy/"
+  ></div>
+  <!-- UY BEGIN -->
+  <div id="uyan_frame"></div>
+  <script
+    type="text/javascript"
+    src="http://v2.uyan.cc/code/uyan.js?uid=2127864"
+  ></script>
+  <!-- UY END -->
 </section>
 
-<div style="text-align: center"><span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv" style="color: red;"></span>次</span></div>
+<div style="text-align: center">
+  <span id="busuanzi_container_site_pv"
+    >总访问量<span id="busuanzi_value_site_pv" style="color: red"></span
+    >次</span
+  >
+</div>
+
+
 
 </section>
             
-            <aside id="sidebar">
+            <aside id="sidebar" class="">
+   
   
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/seajs/">seajs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端优化/">前端优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑/">编辑</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/babel/" style="font-size: 10px;">babel</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mongoose/" style="font-size: 10px;">mongoose</a> <a href="/tags/seajs/" style="font-size: 10px;">seajs</a> <a href="/tags/update/" style="font-size: 10px;">update</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/前端优化/" style="font-size: 10px;">前端优化</a> <a href="/tags/模块化/" style="font-size: 10px;">模块化</a> <a href="/tags/编辑/" style="font-size: 10px;">编辑</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/03/20/babel入门一篇搞定/">babel入门一篇搞定</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/16/seaJs模块化开发简单入门/">seaJs模块化开发简单入门</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/14/学习Webpack原来就是SoEasy/">学习webpack原来就是SoEasy</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/10/原生js获取css样式/">原生js获取css样式</a>
-          </li>
-        
-          <li>
-            <a href="/2017/02/24/mongoose常见错误（一）/">mongoose常见错误（一）</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
 <div class="widget-wrap">
-  <h3 class="widget-title">友情链接</h3>
-  <div class="widget tag">
-    <ul class="entry">
+  <h3 class="widget-title">标签</h3>
+  <div class="widget"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/seajs/">seajs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端优化/">前端优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑/">编辑</a><span class="tag-list-count">1</span></li></ul></div>
+</div>
+
+  
+<div class="widget-wrap">
+  <h3 class="widget-title">标签云</h3>
+  <div class="widget tagcloud"><a href="/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/babel/" style="font-size: 10px;">babel</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mongoose/" style="font-size: 10px;">mongoose</a> <a href="/tags/seajs/" style="font-size: 10px;">seajs</a> <a href="/tags/update/" style="font-size: 10px;">update</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/前端优化/" style="font-size: 10px;">前端优化</a> <a href="/tags/模块化/" style="font-size: 10px;">模块化</a> <a href="/tags/编辑/" style="font-size: 10px;">编辑</a></div>
+</div>
+
+  
+<div class="widget-wrap">
+  <h3 class="widget-title">归档</h3>
+  <div class="widget">
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+</div>
+
+  
+<div class="widget-wrap">
+  <h3 class="widget-title">最新文章</h3>
+  <div class="widget">
+    <ul>
       
-      <li class='link'><a href='http://zmnaer.com' target="_blank">Blog</a></li>
+      <li>
+        <a href="/2017/03/20/babel入门一篇搞定/"
+          >babel入门一篇搞定</a
+        >
+      </li>
       
-      <li class='link'><a href='https://github.com/zm-1006' target="_blank">Github</a></li>
+      <li>
+        <a href="/2017/03/16/seaJs模块化开发简单入门/"
+          >seaJs模块化开发简单入门</a
+        >
+      </li>
       
-      <li class='link'><a href='https://coding.net/u/zmnaer' target="_blank">Coding</a></li>
+      <li>
+        <a href="/2017/03/14/学习Webpack原来就是SoEasy/"
+          >学习webpack原来就是SoEasy</a
+        >
+      </li>
       
-      <li class='link'><a href='http://sighttp.qq.com/msgrd?v=3&uin=1099653545&site=&menu=yes' target="_blank">QQ</a></li>
+      <li>
+        <a href="/2017/03/10/原生js获取css样式/"
+          >原生js获取css样式</a
+        >
+      </li>
       
-      <li class='link'><a href='http://www.jianshu.com/u/edb0760fcc3c' target="_blank">简书</a></li>
+      <li>
+        <a href="/2017/02/24/mongoose常见错误（一）/"
+          >mongoose常见错误（一）</a
+        >
+      </li>
       
     </ul>
   </div>
 </div>
 
   
+<div class="widget-wrap">
+  <h3 class="widget-title">友情链接</h3>
+  <div class="widget tag">
+    <ul class="entry">
+      
+      <li class="link">
+        <a href="//tiven.cn" target="_blank">Blog</a>
+      </li>
+      
+      <li class="link">
+        <a href="//github.com/tive6" target="_blank">Github</a>
+      </li>
+      
+      <li class="link">
+        <a href="//coding.net/u/zmnaer" target="_blank">Coding</a>
+      </li>
+      
+      <li class="link">
+        <a href="//www.jianshu.com/u/edb0760fcc3c" target="_blank">简书</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+ 
 </aside>
+
             
         </div>
         <footer id="footer">
-    <!-- 引入不蒜子插件 -->
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <!--<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>-->
+  <!-- 引入不蒜子插件 -->
+  <script
+    async
+    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+  ></script>
+  <span id="busuanzi_container_site_pv"
+    >本站总访问量<span id="busuanzi_value_site_pv"></span>次</span
+  >
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017——zmnaer<br>
-      由 <a href="http://hexo.io/" target="_blank"> Hexo </a> 强力驱动
+      &copy; 2021——tiven<br />
+      由 <a href="//hexo.io/zh-cn/" target="_blank"> Hexo </a> 强力驱动
     </div>
   </div>
 </footer>
+
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">主页</a>
+  <a href="/" class="mobile-nav-link">主页</a>
   
-    <a href="/archives" class="mobile-nav-link">归类</a>
+  <a href="/archives" class="mobile-nav-link">归类</a>
   
-    <a href="/about" class="mobile-nav-link">关于</a>
+  <a href="/about" class="mobile-nav-link">关于</a>
   
 </nav>
-    9
 
-<script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+    
 
+<script src="//lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
+ <link rel="stylesheet" href="/fancybox/jquery.fancybox.css"> <script src="/fancybox/jquery.fancybox.pack.js"></script>  <script src="/js/script.js"></script>
 
 </div>
 </body>
