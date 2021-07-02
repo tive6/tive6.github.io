@@ -28,7 +28,7 @@ widgets:
 # 浏览量统计
 ## - popular_posts
 # 友情链接
-- links
+#- links
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -53,6 +53,6 @@ fb_app_id:
 
 
 # 是否开启打赏功能
-donate: true
+#donate: true
 # 打赏文案
-donate_message: 欣赏此文？求鼓励，求支持！
+#donate_message: 欣赏此文？求鼓励，求支持！
