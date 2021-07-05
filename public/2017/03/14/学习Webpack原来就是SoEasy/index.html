@@ -29,10 +29,12 @@
 <meta property="og:site_name" content="天問">
 <meta property="og:description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-07-01T04:07:01.015Z">
+<meta property="og:image" content="//tiven.cn/assets/img/img-webpack.jpg">
+<meta property="og:updated_time" content="2021-07-05T03:50:13.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习webpack原来就是SoEasy">
 <meta name="twitter:description" content="在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的模块化和一系列前端优化工具，webpack就是优化工具其中之一。">
+<meta name="twitter:image" content="//tiven.cn/assets/img/img-webpack.jpg">
     
         <link rel="alternate" href="/atom.xml" title="天問" type="application/atom+xml">
     
@@ -104,9 +106,9 @@
           title="RSS Feed"
         ></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+<!--        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>-->
       </nav>
-      <div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="//tiven.cn"></form></div>
+<!--      <div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="//tiven.cn"></form></div>-->
     </div>
   </div>
 </header>
@@ -140,7 +142,10 @@
     </header>
     
     <div class="article-entry" itemprop="articleBody">
-       <p>在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的<code>模块化</code>和一系列前端优化工具，<a href="https://webpack.js.org/" target="_blank" rel="noopener">webpack</a>就是优化工具其中之一。<br><a id="more"></a><br><a href="https://webpack.js.org" target="_blank" rel="noopener">![webpack]</a><br>[webpack]:<a href="http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg" target="_blank" rel="noopener">http://ohecg7vrp.bkt.clouddn.com/webpack_logo.jpg</a> “blog”<br><code>webpack</code>是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。本文就简单介绍webpack的基本使用和<code>config</code>配置。<br><strong><em>前提：</em></strong>windows下<code>node</code>和<code>npm</code>环境已经配置OK，<code>cmd命令行</code>中<code>node -v</code>和<code>npm -v</code>都能正常显示版本。</p>
+       <p>在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的<code>模块化</code>和一系列前端优化工具，<a href="https://webpack.js.org/" target="_blank" rel="noopener">webpack</a>就是优化工具其中之一。</p>
+<p><a href="//webpack.js.org"><img src="//tiven.cn/assets/img/img-webpack.jpg" alt="Webpack" title="webpack"></a></p>
+<a id="more"></a>
+<p><code>webpack</code>是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。本文就简单介绍webpack的基本使用和<code>config</code>配置。<br><strong><em>前提：</em></strong>windows下<code>node</code>和<code>npm</code>环境已经配置OK，<code>cmd命令行</code>中<code>node -v</code>和<code>npm -v</code>都能正常显示版本。</p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><hr>
 <ul>
 <li><p>全局安装</p>
@@ -374,7 +379,7 @@ webpack --config webpack.react.config.js    // 针对react
   
 <div class="widget-wrap">
   <h3 class="widget-title">标签</h3>
-  <div class="widget"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/seajs/">seajs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端优化/">前端优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑/">编辑</a><span class="tag-list-count">1</span></li></ul></div>
+  <div class="widget"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CMD/">CMD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/seajs/">seajs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/update/">update</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/">webpack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端优化/">前端优化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模块化/">模块化</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑/">编辑</a><span class="tag-list-count">1</span></li></ul></div>
 </div>
 
   
@@ -387,7 +392,7 @@ webpack --config webpack.react.config.js    // 针对react
 <div class="widget-wrap">
   <h3 class="widget-title">归档</h3>
   <div class="widget">
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">2</span></li></ul>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">2</span></li></ul>
   </div>
 </div>
 
@@ -396,6 +401,12 @@ webpack --config webpack.react.config.js    // 针对react
   <h3 class="widget-title">最新文章</h3>
   <div class="widget">
     <ul>
+      
+      <li>
+        <a href="/2021/07/05/JS中字符串和数组的基本操作/"
+          >JS中字符串和数组的基本操作</a
+        >
+      </li>
       
       <li>
         <a href="/2017/03/20/babel入门一篇搞定/"
@@ -418,12 +429,6 @@ webpack --config webpack.react.config.js    // 针对react
       <li>
         <a href="/2017/03/10/原生js获取css样式/"
           >原生js获取css样式</a
-        >
-      </li>
-      
-      <li>
-        <a href="/2017/02/24/mongoose常见错误（一）/"
-          >mongoose常见错误（一）</a
         >
       </li>
       
@@ -454,6 +459,48 @@ webpack --config webpack.react.config.js    // 针对react
   </div>
 </footer>
 
+<div id="fixed-btn" class="fixed-btn">
+  <a id="go-top" class="go-top" title="返回顶部"></a>
+</div>
+
+<script>
+  // 当网页向下滑动 300px 出现"返回顶部" 按钮
+  // window.onscroll = function() {scrollFunction()};
+  //
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  //     document.getElementById("fixed-btn").style.display = "block";
+  //   } else {
+  //     document.getElementById("fixed-btn").style.display = "none";
+  //   }
+  // }
+  //
+  // // 点击按钮，返回顶部
+  // function topFunction() {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    $(document).scroll(function() {
+      var $scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; //兼容浏览器
+      if($scrollTop > 300) { //滚动高度可调
+        $("#fixed-btn").show();
+      } else {
+        $("#fixed-btn").hide();
+      };
+    })
+
+    $("#fixed-btn").on("click", function() {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 500);
+    })
+
+  })
+
+
+</script>
     </div>
     <nav id="mobile-nav">
   

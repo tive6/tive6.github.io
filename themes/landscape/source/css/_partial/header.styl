@@ -2,6 +2,7 @@
   height: banner-height
   position: relative
   border-bottom: 1px solid color-border
+  overflow: hidden
   &:before, &:after
     content: ""
     position: absolute
@@ -16,12 +17,19 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
 
 #header-outer
+  box-sizing : border-box
   height: 100%
   position: relative
+  padding: 0
 
 #header-inner
+  box-sizing : border-box
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.3)
   position: relative
   overflow: hidden
+  margin: 0
+  padding: 0 20px
 
 #banner
   position: absolute
@@ -29,17 +37,15 @@
   left: 0
   width: 100%
   height: 100%
-  background: url(banner-url) center #000
+  background: rgba(0, 0, 0, 0.7) url(//tiven.cn/assets/img/img-banner-01.jpg) no-repeat center fixed
   background-size: cover
   z-index: -1
 
 #header-title
   text-align: center
-  height: logo-size
   position: absolute
-  top: 50%
+  top: 40%
   left: 0
-  margin-top: logo-size * -0.5
 
 $logo-text
   text-decoration: none
@@ -64,7 +70,7 @@ $logo-text
 
 #main-nav
   float: left
-  margin-left: -15px
+  //margin-left: -15px
 
 $nav-link
   float: left
@@ -85,7 +91,7 @@ $nav-link
   font-size: font-size
   width: font-size
   height: font-size
-  padding: 20px 15px
+  padding: 22px 15px
   position: relative
   cursor: pointer
 
@@ -105,7 +111,7 @@ $nav-link
 
 #sub-nav
   float: right
-  margin-right: -15px
+  //margin-right: -15px
 
 #nav-rss-link
   &:before

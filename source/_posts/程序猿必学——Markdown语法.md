@@ -7,6 +7,9 @@ tags:
 ---
 `Markdown`是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，从而让文本`易读易写`，增强可读性。
 因此，Markdown被广泛的应用于`个人博客`、`Github`、`Coding`等具有大量文本的交流学习网站。
+
+![Markdown](//tiven.cn/assets/img/img-md.png)
+
 <!--more-->
 
 ---
@@ -74,9 +77,10 @@ tags:
 ### 一个带有title属性的图片（img标签）
 **md写法：**
 
-        ![IMG](//tiven.cn/logo.png "Hello")
+        ![IMG](//tiven.cn/assets/img/01.jpg "Hello")
 **结果显示：**
-![IMG](//tiven.cn/logo.png "Hello")
+
+![IMG](//tiven.cn/assets/img/05.jpg "Hello")
 
 ---
 ### 一个超链接（a标签）
@@ -91,11 +95,10 @@ tags:
 ### 一个有超链接的图片
 **md写法：**
 
-        [![tiven]](//tiven.cn)
-        [tiven]://tiven.cn/logo.png "blog"
+        [![tiven](//tiven.cn/logo.png "tiven")](//tiven.cn)
 **结果显示：**
-[![tiven]](//tiven.cn)
-[tiven]://tiven.cn/logo.png "blog"
+
+[![tiven](//tiven.cn/logo.png "tiven")](//tiven.cn)
 
 ---
 ### 换行符（br）

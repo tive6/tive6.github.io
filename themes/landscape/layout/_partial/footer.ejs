@@ -18,3 +18,46 @@
     </div>
   </div>
 </footer>
+
+<div id="fixed-btn" class="fixed-btn">
+  <a id="go-top" class="go-top" title="返回顶部"></a>
+</div>
+
+<script>
+  // 当网页向下滑动 300px 出现"返回顶部" 按钮
+  // window.onscroll = function() {scrollFunction()};
+  //
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  //     document.getElementById("fixed-btn").style.display = "block";
+  //   } else {
+  //     document.getElementById("fixed-btn").style.display = "none";
+  //   }
+  // }
+  //
+  // // 点击按钮，返回顶部
+  // function topFunction() {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    $(document).scroll(function() {
+      var $scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; //兼容浏览器
+      if($scrollTop > 300) { //滚动高度可调
+        $("#fixed-btn").show();
+      } else {
+        $("#fixed-btn").hide();
+      };
+    })
+
+    $("#fixed-btn").on("click", function() {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 500);
+    })
+
+  })
+
+
+</script>

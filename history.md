@@ -4,7 +4,7 @@
 
 * 位置`article.ejs`
 
-```javascript
+```ejs
 <!-- 增加打赏功能 -->
   <% if (!index && theme.donate){ %>
   <%- partial('donate') %>
