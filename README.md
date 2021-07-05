@@ -1,6 +1,8 @@
 # 天問
 
-![tiven](//tiven.cn/logo.png "LOGO")
+<div style="text-align: center;">
+    <img src="//tiven.cn/logo.png" alt="LOGO"/>
+</div>
 
 主页：[天問tiven.cn](//tiven.cn "tiven")
 
