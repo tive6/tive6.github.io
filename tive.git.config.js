@@ -2,7 +2,7 @@ module.exports = {
   shell: [
     'git status',
     'git add .',
-    'git commit -m "发布新文章"',
+    'git commit -m "百度搜索验证"',
     // 'git push origin test',
     // 'git checkout test',
     // 'git checkout master',
