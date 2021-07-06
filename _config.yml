@@ -16,7 +16,8 @@ timezone: Asia/Shanghai #时区
 # url: https://zm-1006.github.io
 url: //tiven.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :id/
+#permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
