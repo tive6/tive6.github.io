@@ -1,10 +1,11 @@
 # Header
 menu:
   主页: /
-  归类: /archives
+  归档: /archives
+#  分类: /categories
   关于: /about
-##  标签: /tag
-##  标签云: /tagcloud
+#  标签: /tag
+#  标签云: /tagcloud
 rss: /atom.xml
 sitemap: /sitemap.xml || sitemap
 
@@ -18,11 +19,11 @@ fancybox: true
 sidebar: right
 widgets:
 # 归类
-- category
+#- category
 # 标签
 - tag
 # 标签云
-- tagcloud
+#- tagcloud
 - archive
 - recent_posts
 # 浏览量统计
@@ -32,9 +33,9 @@ widgets:
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
-# - category
-# - tagcloud
-# - archive
+ - category
+ - tagcloud
+ - archive
 
 # widget behavior
 # 依据什么来分类（此处以月份来分类）
@@ -56,3 +57,15 @@ fb_app_id:
 #donate: true
 # 打赏文案
 #donate_message: 欣赏此文？求鼓励，求支持！
+
+# 站内文章搜索
+#local_search:
+#  enable: true
+
+# 文章字数统计及阅读时常功能
+#post_wordcount:
+#  item_text: true
+#  wordcount: true #单篇文章字数
+#  min2read: true #单篇阅读时长
+#  totalcount: true #站点总字数
+#  separated_meta: true

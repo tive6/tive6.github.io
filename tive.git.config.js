@@ -2,7 +2,7 @@ module.exports = {
   shell: [
     'git status',
     'git add .',
-    'git commit -m "readme.md文件跳过编译"',
+    'git commit -m "url优化"',
     // 'git push origin test',
     // 'git checkout test',
     // 'git checkout master',
@@ -11,6 +11,7 @@ module.exports = {
     'git push origin master',
     // 'git checkout dev/0609-clue-now',
     'git status',
+    'npm run d',
     'hexo d',
   ],
 }

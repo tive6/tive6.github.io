@@ -5,7 +5,8 @@
 # Site
 title: 天問
 subtitle: 路漫漫其修远兮，吾将上下而求索
-description: blog
+description: 天問的个人网站，分享coding的魅力。生命不息，奋斗不止，ing...
+keywords: tiven tiven.cn zmnaer zmer 天問 松枫 hexo 前端 HTML H5 javascript coding
 author: tiven
 email: 1099@qq.com
 language: zh-CN
@@ -14,9 +15,9 @@ timezone: Asia/Shanghai #时区
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: https://zm-1006.github.io
-url: //tiven.cn
+url: https://tiven.cn
 root: /
-permalink: :id/
+permalink: :category/:year/:title/
 #permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -35,7 +36,8 @@ skip_render:
 Category: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link:  # Open external links in new tab
+  enable: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -48,7 +50,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: 学习笔记
 category_map:
 tag_map:
 
@@ -66,6 +68,14 @@ pagination_dir: page
 
 ## 添加多说评论
 #duoshuo_shortname: zmnaer
+
+# 站内文章搜索
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+  limit: 10000
 
 ## 百度统计
 baidu_tongji: true
