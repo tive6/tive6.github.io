@@ -8,7 +8,7 @@ subtitle: 路漫漫其修远兮，吾将上下而求索
 description: 天問的个人网站，分享coding的魅力。生命不息，奋斗不止，ing...
 keywords: tiven tiven.cn zmnaer zmer 天問 松枫 hexo 前端 HTML H5 javascript coding
 author: tiven
-email: 1099@qq.com
+email: zm420323@163.com
 language: zh-CN
 timezone: Asia/Shanghai #时区
 
@@ -36,8 +36,8 @@ skip_render:
 Category: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link:  # Open external links in new tab
-  enable: true
+external_link: true # Open external links in new tab
+#  enable: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
