@@ -11,6 +11,7 @@
     "build": "hexo generate",
     "zip": "node zip.js",
     "git": "tive git -c tive.git.config.js",
+    "push": "tive git -c tive.push.config.js",
     "d": "npm run clean && npm run build && npm run zip",
     "clean": "hexo clean",
     "prettier": "prettier --write **/*.{js,html,styl,ejs}"
@@ -32,6 +33,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-wordcount": "^6.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "xml2js": "^0.4.23"
   }
 }
