@@ -1,0 +1,9 @@
+{
+  "filename": "hexo-20210712-01.zip",
+  "host": "82.156.205.252",
+  "username": "root",
+  "rsaPath": "D:/ssh/id_rsa",
+  "localPath": "D:/zip",
+  "remotePath": "/data/www/blog/",
+  "shellPath": "/data/www/shell/"
+}

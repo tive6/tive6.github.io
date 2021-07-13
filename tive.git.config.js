@@ -2,7 +2,7 @@ module.exports = {
   shell: [
     'git status',
     'git add .',
-    'git commit -m "sitemap推送"',
+    'git commit -m "配置自动化部署"',
     // 'git push origin test',
     // 'git checkout test',
     // 'git checkout master',
@@ -11,8 +11,8 @@ module.exports = {
     'git push origin master',
     // 'git checkout dev/0609-clue-now',
     'git status',
-    'npm run d',
-    'hexo d',
-    'npm run push',
+    // 'npm run d',
+    // 'hexo d',
+    // 'npm run push',
   ],
 }

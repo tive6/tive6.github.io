@@ -9,11 +9,12 @@
     "start": "hexo server",
     "dev": "hexo server",
     "build": "hexo generate",
-    "zip": "node zip.js",
+    "clean": "hexo clean",
     "git": "tive git -c tive.git.config.js",
     "push": "tive git -c tive.push.config.js",
-    "d": "npm run clean && npm run build && npm run zip",
-    "clean": "hexo clean",
+    "deploy": "tive git -c tive.deploy.config.js",
+    "postzip": "node deploy.js",
+    "zip": "npm run clean && npm run build && node zip.js",
     "prettier": "prettier --write **/*.{js,html,styl,ejs}"
   },
   "dependencies": {
@@ -33,6 +34,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-wordcount": "^6.0.1",
+    "node-ssh": "^12.0.0",
     "rimraf": "^3.0.2",
     "xml2js": "^0.4.23"
   }

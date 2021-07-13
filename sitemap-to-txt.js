@@ -3,7 +3,7 @@ const xml2js = require('xml2js')
 
 const Parser = new xml2js.Parser()
 // console.log(Parser)
-fs.readFile(__dirname + '/public/baidusitemap.xml', function(err, data) {
+fs.readFile(__dirname + '/public/sitemap.xml', function(err, data) {
   Parser.parseString(data, function (err, result) {
     if (!err) {
       let urls = result.urlset.url

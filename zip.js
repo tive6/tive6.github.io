@@ -1,6 +1,7 @@
 const AdmZip = require('adm-zip');
 const rm = require('rimraf');
 const fs = require('fs');
+const config = require('./config.json')
 // console.log(process.argv)
 
 fs.exists('./public', (s) => {
@@ -21,9 +22,11 @@ function handle() {
   // console.log(date)
   // creating archives
   const filename = `hexo-${date}-${ver}.zip`;
+  saveFilename(filename)
   const zip = new AdmZip();
   zip.addLocalFolder('./public');
   zip.writeZip(`D:/zip/${filename}`);
+  console.log('')
   console.log(`${filename} 压缩完成`);
   // extracting archives
   // var unzip = new AdmZip('C:/Users/zhouxianfu/Desktop/zip/dist.zip')
@@ -32,4 +35,13 @@ function handle() {
   // rm('./dist', () => { // 删除当前目录
   //   console.log('dist deleted');
   // });
+}
+
+
+function saveFilename(filename) {
+  let json = Object.assign({}, config, {
+    filename: filename,
+  })
+  let data = JSON.stringify(json, null, 2)
+  fs.writeFileSync('./config.json', data)
 }
