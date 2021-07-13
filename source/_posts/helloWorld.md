@@ -1,9 +1,9 @@
 ---
 title: 大牛之路—Hello World
-date: 2016-11-24 16:25:55
 tags:
   - html
-
+abbrlink: 662250b0
+date: 2016-11-24 16:25:55
 ---
 
 一个程序猿的`超神之路`，往往都是从编写`Hello Word`开始的。

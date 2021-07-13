@@ -1,9 +1,10 @@
 ---
 title: mongoose常见错误（一）
-date: 2017-02-24 11:30:49
 tags:
   - mongodb
   - mongoose
+abbrlink: d585de37
+date: 2017-02-24 11:30:49
 ---
 `mongoose`是一个将js对象与数据库产生关系的一个`框架`，让传统的直接操作数据库变成`操作对象`，从而间接的操作数据库。
 

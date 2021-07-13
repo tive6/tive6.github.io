@@ -17,9 +17,26 @@ timezone: Asia/Shanghai #时区
 # url: https://zm-1006.github.io
 url: https://tiven.cn
 root: /
-permalink: :category/:year/:title/
+#permalink: :category/:year/:title/
 #permalink: :year/:month/:day/:title/
+permalink: p/:abbrlink/
 permalink_defaults:
+
+
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default)
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+#     depth:        #3(default)
+     over_write: false
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
 
 # Directory
 source_dir: source
@@ -50,9 +67,17 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: 学习笔记
+default_category: notes
 category_map:
+  前端: web
+  开发者笔记: developer
+  学习笔记: notes
 tag_map:
+  前端优化: optimization
+  前端工程化: engineering
+  模块化: modularization
+  编辑: edit
+  规范: standard
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

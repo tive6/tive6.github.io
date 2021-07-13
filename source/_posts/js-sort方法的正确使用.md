@@ -1,8 +1,9 @@
 ---
 title: js-sort方法的正确使用
-date: 2016-12-16 13:30:26
 tags:
   - js
+abbrlink: cf14cb7c
+date: 2016-12-16 13:30:26
 ---
 JavaScript中的sort()方法用于对数组的元素进行排序。其中有许多误区一定要注意，不然就会带来意想不到的结果。
 <!--more-->

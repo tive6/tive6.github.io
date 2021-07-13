@@ -1,8 +1,9 @@
 ---
 title: windows常用shell命令之文件操作
-date: 2020-07-06 10:28:51
 tags:
   - shell
+abbrlink: f8a10c7
+date: 2020-07-06 10:28:51
 ---
 
 1. Windows的`Shell`命令又是Windows的`CMD`命令。而cmd命令又是原来MS-DOS系统保留下来

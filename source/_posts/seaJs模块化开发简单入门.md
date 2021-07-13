@@ -1,11 +1,12 @@
 ---
 title: seaJs模块化开发简单入门
-date: 2017-3-16 13:20:55
 tags:
   - seajs
   - js
   - CMD
   - 模块化
+abbrlink: 88e75d70
+date: 2017-03-16 13:20:55
 ---
 随着前端技术的日益成熟，功能越来越丰富强大，规范也越来越健全，在这样的背景环境下很快便有了[CommonJs](http://javascript.ruanyifeng.com/nodejs/module.html)、[AMD](http://javascript.ruanyifeng.com/nodejs/module.html#toc4)、[CMD](https://github.com/cmdjs/specification/blob/master/draft/module.md)等一系列规范，使前端发开趋向模块化、规范化。
 CMD模块化的代表之一就是国内开发的[seaJs](http://seajs.org)，它有很多优点：
