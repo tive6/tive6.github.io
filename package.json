@@ -13,8 +13,8 @@
     "git": "tive git -c tive.git.config.js",
     "push": "tive git -c tive.push.config.js",
     "deploy": "tive git -c tive.deploy.config.js",
-    "postzip": "node deploy.js",
     "zip": "npm run clean && npm run build && node zip.js",
+    "postzip": "node deploy.js",
     "prettier": "prettier --write **/*.{js,html,styl,ejs}"
   },
   "dependencies": {
