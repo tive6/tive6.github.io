@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"
+     width="200" height="200">
+    <g xmlns="http://www.w3.org/2000/svg" transform="scale(1.0)">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"
+             x="45" y="55" style="overflow: visible">
+            <g transform="scale(1.0)">
+                <path d="M31.9,0h80l-8.42,31.43H73.08C68.46,15.29,54.82,0,31.9,0Z" style="fill: #1CB674; fill-rule: evenodd"/>
+                <path d="M8.42,0H26.59C49.52,0,63.16,15.29,67.77,31.43L51.26,105.05H17.33L33.85,31.43H0L08.42,0Z"
+                      style="fill: #FB5430; fill-rule: evenodd"/>
+            </g>
+        </svg>
+    </g>
+</svg>

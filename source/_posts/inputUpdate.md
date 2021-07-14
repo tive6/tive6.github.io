@@ -2,7 +2,9 @@
 title: 实现input图片上传预览的各种坑
 tags:
   - update
-  - js
+  - js 
+categories:
+  - 前端
 abbrlink: a0900327
 date: 2016-12-01 16:25:55
 ---

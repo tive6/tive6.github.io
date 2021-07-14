@@ -4,6 +4,8 @@ tags:
   - babel
   - ES6
   - js
+categories:
+  - 学习笔记
 abbrlink: 4f5362b7
 date: 2017-03-20 15:32:23
 ---

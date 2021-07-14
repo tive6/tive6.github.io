@@ -2,6 +2,8 @@
 title: JS中字符串和数组的基本操作
 tags:
   - js
+categories:
+  - 前端
 abbrlink: 26a2eea
 date: 2018-04-05 10:45:18
 ---

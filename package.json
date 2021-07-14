@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "hexo server",
-    "dev": "hexo server",
+    "dev": "nodemon --watch _config.yml --exec \"hexo clean && hexo g && hexo s \"",
     "build": "hexo generate",
     "clean": "hexo clean",
     "git": "tive git -c tive.git.config.js",

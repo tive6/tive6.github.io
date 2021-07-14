@@ -5,6 +5,8 @@ tags:
   - js
   - CMD
   - 模块化
+categories:
+  - 前端
 abbrlink: 88e75d70
 date: 2017-03-16 13:20:55
 ---

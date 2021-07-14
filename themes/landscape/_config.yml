@@ -19,9 +19,9 @@ fancybox: true
 sidebar: right
 widgets:
 # 归类
-#- category
+- category
 # 标签
-- tag
+#- tag
 # 标签云
 #- tagcloud
 - archive

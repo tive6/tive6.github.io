@@ -2,6 +2,8 @@
 title: js-sort方法的正确使用
 tags:
   - js
+categories:
+  - 前端
 abbrlink: cf14cb7c
 date: 2016-12-16 13:30:26
 ---

@@ -3,6 +3,8 @@ title: mongoose常见错误（一）
 tags:
   - mongodb
   - mongoose
+categories:
+  - 学习笔记
 abbrlink: d585de37
 date: 2017-02-24 11:30:49
 ---

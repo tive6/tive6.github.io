@@ -14,7 +14,6 @@ timezone: Asia/Shanghai #时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-# url: https://zm-1006.github.io
 url: https://tiven.cn
 root: /
 #permalink: :category/:year/:title/
@@ -72,12 +71,15 @@ category_map:
   前端: web
   开发者笔记: developer
   学习笔记: notes
+  文学爱好者: literature
 tag_map:
   前端优化: optimization
   前端工程化: engineering
   模块化: modularization
   编辑: edit
   规范: standard
+  诗词: poetry
+  致青春: youth
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
