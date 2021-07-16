@@ -2,7 +2,7 @@ module.exports = {
   shell: [
     'git status',
     'git add .',
-    'git commit -m "修改url配置"',
+    'git commit -m "样式优化"',
     // 'git push origin test',
     // 'git checkout test',
     // 'git checkout master',
@@ -12,7 +12,7 @@ module.exports = {
     // 'git checkout dev/0609-clue-now',
     'git status',
     // 'npm run d',
-    // 'hexo d',
+    'hexo d',
     // 'npm run push',
   ],
 }
