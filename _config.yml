@@ -6,11 +6,12 @@
 title: 天問
 subtitle: 路漫漫其修远兮，吾将上下而求索
 description: 天問的个人网站，记录学习的历程，分享coding的魅力。生命不息，奋斗不止...
-keywords: tiven tiven.cn zmnaer zmer 天問 天問e站 松枫 hexo 前端 HTML H5 javascript coding
+keywords: tiven tiven.cn zmnaer zmer 天問 天問e站 天問博客 天問网站 松枫 hexo 前端 HTML H5 javascript coding coder
 author: tiven
 email: zm420323@163.com
 language: zh-CN
 timezone: Asia/Shanghai #时区
+startDate: 2016年10月
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

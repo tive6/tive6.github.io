@@ -63,9 +63,9 @@ fb_app_id:
 #  enable: true
 
 # 文章字数统计及阅读时常功能
-#post_wordcount:
-#  item_text: true
-#  wordcount: true #单篇文章字数
-#  min2read: true #单篇阅读时长
-#  totalcount: true #站点总字数
-#  separated_meta: true
+post_wordcount:
+  item_text: true
+  wordcount: true #单篇文章字数
+  min2read: true #单篇阅读时长
+  totalcount: true #站点总字数
+  separated_meta: true

@@ -7,14 +7,14 @@
     <!--定义网页的关键字，供搜索引擎搜索-->
     <meta
             name="keywords"
-            content="tiven tiven.cn www.tiven.cn zmnaer zmer 天問 天問e站 松枫 hexo 前端 HTML H5 javascript coding"
+            content="<%= config.keywords %>"
     />
     <!--设置网页作者-->
-    <meta name="author" content="tiven" />
+    <meta name="author" content="<%= config.author %>" />
     <!--设置网页版权-->
-    <meta name="copyright" content="tiven" />
+    <meta name="copyright" content="<%= config.author %>" />
     <!--设置创建时间-->
-    <meta name="date" content="2016年10月" />
+    <meta name="date" content="<%= config.startDate %>" />
     <% var title = page.title;
       if (is_archive()) {
         title = __("archive_a");

@@ -25,6 +25,8 @@
     </div>
     <footer class="article-footer">
       <%- partial('post/tag') %>
+      <span class="post-text-count">文章字数：<%= wordcount(post.content) %></span>
+<!--      <span class="post-count">阅读时长：<%= min2read(post.content) %></span>-->
     </footer>
   </div>
   <% if (!index){ %> <%- partial('post/nav') %> <% } %>
