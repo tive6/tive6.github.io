@@ -2,7 +2,7 @@
   height: banner-height
   position: relative
   border-bottom: 1px solid color-border
-  overflow: hidden
+  //overflow: hidden
   &:before, &:after
     content: ""
     position: absolute
@@ -169,3 +169,194 @@ $nav-link
   cursor: pointer
   &:hover, &:focus
     color: #777
+
+
+
+/* 文章搜索 */
+.site-search-form
+  //display none
+  box-sizing border-box
+  position: absolute
+  //width: calc(100% - 40px);
+  width: 80%
+  padding 20px
+  //height: 30px
+  //top: -100px
+  top -230px
+  left: 10%
+  z-index 999
+  opacity: 1
+  background-color #fff
+  border-radius 8px
+  box-shadow 0 0 10px #ddd
+  transition: all 0.3s ease-out
+  &.show
+    opacity: 1
+    top 50px
+  @media mq-mobile
+    width: calc(100% - 40px);
+    left: 20px
+
+.site-search-h2
+  padding: 0 0 0.7rem;
+  color: #49b1f5;
+  font-size: 1.4em;
+
+
+.st-search-input
+  box-sizing border-box
+  padding: 0.25rem 0.7rem;
+  width: 100%;
+  outline: none;
+  border: 2px solid #49b1f5;
+  border-radius: 2rem;
+  //background: var(--search-bg);
+  //color: var(--search-input-color);
+  -webkit-appearance: none;
+
+
+.site-search-hr
+  margin: 1rem auto;
+  border: 2px dashed #A4D8FA;
+  width: calc(100% - 10px);
+
+.local-search {
+  position: relative;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+#local-search-close {
+  //content: 'x';
+  width 24px
+  height 24px
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  //background: #fff;
+  background url("./../img/icon-close-01.png") no-repeat center
+  background-size 100%
+  color: #888;
+  display: block;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  transform: rotateZ(0);
+  transition: all 0.3s;
+  &:hover {
+    transform: rotateZ(180deg);
+  }
+}
+
+.local-search-result-cls {
+  .local-search-empty {
+    color: #888;
+    line-height: 44px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .search-result-list {
+    box-sizing border-box
+    width: 100%;
+    max-height: calc(100vh - 230px);
+    min-height: 0;
+    height: auto;
+    overflow-y: auto;
+    //border: 1px solid #CCC;
+    padding: 10px 10px;
+    background: #FFF;
+    //box-shadow: 1px 2px 4px #CCC;
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #A4D8FA;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    }
+
+    li {
+      text-align: left;
+      border-bottom: 1px solid #CCC;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      line-height: 30px;
+      font-weight: normal;
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      a {
+        color #3577FF
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight 600
+        text-decoration none
+        &:hover{
+          color: #5e99ff;
+        }
+        &:active {
+          color
+        }
+      }
+      p {
+        color #666
+        margin-top: 10px;
+        font-size: 12px;
+        max-height: 124px;
+        line-height 1.8
+        overflow: hidden;
+      }
+      em.search-keyword {
+        color: #F57527;
+        //text-decoration underline
+      }
+    }
+  }
+}
+
+.local-search-plugin {
+  .local-search-input-cls {
+    opacity: 0.6;
+    width: 160px;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+      width: 200px;
+      transition: all 0.3s;
+    }
+  }
+  .icon {
+    position: relative;
+    left: -30px;
+    color: #999;
+    cursor: pointer;
+  }
+}
+
+
+#search-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 111;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  //display: block;
+  animation: 0.5s ease 0s 1 normal none running to_show
+}
+
+@media mq-mobile {
+  .search-result-list {
+    overflow-y scroll
+    &::-webkit-scrollbar {
+      width: 0!important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent!important;
+    }
+  }
+}

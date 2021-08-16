@@ -4,9 +4,10 @@
     async
     src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
   ></script>
-  <span id="busuanzi_container_site_pv"
-    >本站总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;次</span
-  >
+  <span id="site-desc">
+    本站总字数&nbsp;<%= totalcount(site) %>&nbsp;<br>
+    总访问量&nbsp;<span id="busuanzi_value_site_pv">6988</span>&nbsp;次
+  </span>
   <% if (theme.sidebar === 'bottom'){ %> <%- partial('_partial/sidebar') %> <% }
   %>
   <div class="outer">
@@ -24,23 +25,6 @@
 </div>
 
 <script>
-  // 当网页向下滑动 300px 出现"返回顶部" 按钮
-  // window.onscroll = function() {scrollFunction()};
-  //
-  // function scrollFunction() {
-  //   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-  //     document.getElementById("fixed-btn").style.display = "block";
-  //   } else {
-  //     document.getElementById("fixed-btn").style.display = "none";
-  //   }
-  // }
-  //
-  // // 点击按钮，返回顶部
-  // function topFunction() {
-  //   document.body.scrollTop = 0;
-  //   document.documentElement.scrollTop = 0;
-  // }
-
   document.addEventListener('DOMContentLoaded', function(){
     $(document).scroll(function() {
       var $scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; //兼容浏览器
@@ -56,6 +40,9 @@
         scrollTop: 0
       }, 500);
     })
+    /* 文章搜索 */
+    var path = "/search.xml";
+    searchFunc(path, 'local-search-input', 'local-search-result');
 
     // $.get('http://data.zz.baidu.com/urls?site=https://www.tiven.cn&token=QZWCDMydKCiY8doP', function(res){
     //   console.log(res)
@@ -66,7 +53,7 @@
 
   function pushBaidu(){
     let img = new Image()
-    img.src = 'http://data.zz.baidu.com/urls?site=https://www.tiven.cn&token=QZWCDMydKCiY8doP'
+    img.src = 'http://data.zz.baidu.com/urls?site=https://tiven.cn&token=QZWCDMydKCiY8doP'
     document.body.appendChild(img)
     img.onload = function () {
       console.log('ok')
