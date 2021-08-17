@@ -100,7 +100,7 @@ pagination_dir: page
 # 站内文章搜索
 search:
   path: search.xml
-  field: all
+  field: post
   content: true
   format: html
   limit: 10000

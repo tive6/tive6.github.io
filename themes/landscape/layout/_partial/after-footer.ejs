@@ -14,18 +14,22 @@
 </script>
 <% } %>
 
-<script src="//lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+<%- js("js/jquery-3.6.0.min.js") %>
 
-<% if (theme.fancybox){ %> <%- css("fancybox/jquery.fancybox") %> <%-
-js("fancybox/jquery.fancybox.pack") %> <% } %> <%- js("js/script") %>
+<!--<script src="//lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>-->
+
+<% if (theme.fancybox){ %>
+  <%- js("fancybox/jquery.fancybox.pack") %>
+<% } %>
+<%- js("js/script") %>
 <!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/love.js"></script>
+<%- js("js/love.js") %>
 <!-- 单击显示文字 -->
-<script type="text/javascript" src="/js/click-show-text.js"></script>
+<%- js("js/click-show-text.js") %>
 <!-- 雪花特效 -->
-<script type="text/javascript" src="/js/snow.js"></script>
+<%- js("js/snow.js") %>
 <!-- 搜索 -->
-<script type="text/javascript" src="/js/search.js"></script>
+<%- js("js/search.js") %>
 <!--<script>-->
 <!--  (function(){-->
 <!--    var bp = document.createElement('script');-->

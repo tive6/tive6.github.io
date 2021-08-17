@@ -30,37 +30,44 @@ html, body, #container
 body {
   background: color-background
   /*background: #dedede*/
-  /*background:url(http://ohecg7vrp.bkt.clouddn.com/blogBg.png)*/
   font: font-size font-sans
   -webkit-text-size-adjust: 100%
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  //@media mq-mobile
-  //  overflow-y scroll
-  //&::-webkit-scrollbar {
-  //  width: 0;
-  //}
-  //&::-webkit-scrollbar-thumb {
-  //  background: transparent;
-  //}
 }
 
 #container {
   &.hidden {
+    height 100vh
     overflow hidden
   }
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
+  height 4px
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background: #49B1F5;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+
+@media mq-mobile {
+  //body, #container {
+  //  overflow-y scroll
+  //}
+  ::-webkit-scrollbar {
+    width: 0
+    height 0
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius none
+    background transparent
+    -webkit-box-shadow none
+  }
 }
 
 .outer
@@ -88,7 +95,7 @@ body {
   overflow: hidden
 
 #wrap
-  height: 100%
+  min-height: 100%
   width: 100%
   position: absolute
   top: 0
@@ -97,6 +104,9 @@ body {
   z-index: 1
   background: color-background
   /*background:url(http://ohecg7vrp.bkt.clouddn.com/blogBg.png)*/
+  @media mq-mobile
+    overflow-y scroll
+
   .mobile-nav-on &
     left: mobile-nav-width
 

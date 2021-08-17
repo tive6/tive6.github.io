@@ -17,7 +17,7 @@
         endPositionTop = documentHeight + 100,
         endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
         durationFall = documentHeight * 10 + Math.random() * 5000;
-      $flake.clone().appendTo('body').css({
+      $flake.clone().appendTo('#snow-wrap').css({
         left: startPositionLeft,
         opacity: startOpacity,
         'font-size': sizeFlake,
@@ -33,6 +33,8 @@
   };
 })(jQuery);
 $(function(){
+  var $nowWrap = $('<div id="snow-wrap"/>')
+  $nowWrap.appendTo('body');
   $.fn.snow({
     minSize: 10, /* 定义雪花最小尺寸 */
     maxSize: 30,/* 定义雪花最大尺寸 */

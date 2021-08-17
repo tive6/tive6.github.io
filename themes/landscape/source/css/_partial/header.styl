@@ -94,6 +94,9 @@ $nav-link
   padding: 22px 15px
   position: relative
   cursor: pointer
+  transition all 0.2s linear
+  &:hover
+    transform scale(1.2)
 
 .main-nav-link
   @extend $nav-link
@@ -200,7 +203,8 @@ $nav-link
 .site-search-h2
   padding: 0 0 0.7rem;
   color: #49b1f5;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  user-select: none;
 
 
 .st-search-input
@@ -217,7 +221,7 @@ $nav-link
 
 .site-search-hr
   margin: 1rem auto;
-  border: 2px dashed #A4D8FA;
+  border: 1px dashed #A4D8FA;
   width: calc(100% - 10px);
 
 .local-search {

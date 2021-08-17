@@ -23,7 +23,7 @@
   position: fixed
   bottom: 5%
   right: 20px;
-  padding: 5px
+  //padding: 5px
   //background-color: #fff
   //border: 1px solid #eee
   //box-shadow: 0 0 5px #333
@@ -36,11 +36,15 @@
   border-radius: 50%
   background: url(//tiven.cn/assets/img/icon-goTop.png) no-repeat center
   background-size: 100%
+  transition all 0.2s linear
+  &:hover
+    transform scale(1.1)
+    box-shadow 0 0 5px #666
 
 .snowbox
   pointer-events none
   position fixed
-  z-index 9999
+  z-index 100
   top -50px
 
 
