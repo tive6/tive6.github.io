@@ -140,3 +140,35 @@ deploy:
       github: git@github.com:tive6/tive6.github.io.git,master
 #      coding: git@git.coding.net:zmnaer/zmnaer.git,coding-pages
   #branch: master
+
+
+# 代码压缩
+minify:
+  enable: true
+  html:
+  css:
+  js:
+  gzip:
+    priority: 10
+  brotli:
+    enable: false
+    priority: 10
+  xml:
+  json:
+  svg:
+    plugins:
+      # Retain comments
+      - name: 'removeComments'
+        active: false
+      # Do not remove unused ID attributes
+      - name: 'cleanupIDs'
+        active: false
+
+
+# 图片懒加载
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional
+  preloadRatio: 3 # optional, default is 1
