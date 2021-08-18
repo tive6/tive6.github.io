@@ -50,3 +50,7 @@ parent  destroyed
 
 Vue官网生命周期图示：
 ![Vue](//tiven.cn/assets/img/img-vue-life.png)
+
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/367439f7/ "天問博客")

@@ -110,7 +110,7 @@ var searchFunc = function (path, search_id, content_id) {
   });
 }
 
-var getSearchFile = function(){
+function getSearchFile(){
   var path = "/search.xml";
   searchFunc(path, 'local-search-input', 'local-search-result');
 }

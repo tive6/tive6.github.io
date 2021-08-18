@@ -112,3 +112,7 @@ seajs的具体`config`配置见：https://github.com/seajs/seajs/issues/262
 * 参考文档：
 1. http://seajs.org/docs/#docs
 2. http://www.antcome.com/myfaq/SeaJS.html
+
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/88e75d70/ "天問博客")

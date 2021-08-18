@@ -43,6 +43,7 @@ tiven.save(function(err){
 -----
 * 参考博文：http://www.cnblogs.com/jay--zhang/p/5911667.html
 
+欢迎访问：[个人博客地址](//tiven.cn/p/d585de37/ "天問博客")
 
 
 

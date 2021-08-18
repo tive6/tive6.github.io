@@ -127,3 +127,5 @@ console.log(arr);// [3,2,1]
 var str = 'abcdef';
 console.log(str.split('').reverse().join(''));// 'fedcba'
 ```
+
+欢迎访问：[个人博客地址](//tiven.cn/p/26a2eea/ "天問博客")

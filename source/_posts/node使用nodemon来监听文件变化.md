@@ -15,20 +15,42 @@ categories:
 
 <!-- more -->
 
-### 使用方法：
+### 安装
 
-1. 安装：`npm install -g nodemon`    # 全局安装
-2. 添加配置文件 `nodemon.json`
-   
-内容如下：
+```bash
+# 全局安装
+npm install -g nodemon
+# or
+# 项目局部安装
+npm install -D nodemon
+```
+
+### 简单监听文件变化
+
+* 使用 `--watch` 参数，在 `package.json` 中配置`scripts`脚本使用。
+* 当然也可以同时监听多个文件，如 `dev:test` 命令。
+* 以vue项目为例，监听`vue.config.js`文件的变化。当运行 `npm run dev` 命令后， `vue.config.js`配置改变会自动重启服务。
+
+```bash
+  "scripts": {
+    "start": "npm run serve",
+    "dev": "nodemon --watch vue.config.js --exec \"npm start\"",
+    "dev:test": "nodemon --watch vue.config.js --watch babel.config.js --exec \"npm start\"",
+  }
+```
+
+### 项目配置化监听
+
+* 由于 `nodemon` 监听的文件范围是整个node项目可能有点广，所以通过配置文件监听我们需要的。
+* 项目根目录下新建 `nodemon.json` 文件，配置如下：
 
 ```javascript
-由于nodemon 监听的文件范围是整个node项目，有点广，所以通过配置文件监听我们需要的。
 {
-// 需要监听的文件后缀名
+// 需要监听的文件后缀名或目录
   "watch": [
+    "src/",
     "*.js",
-    "*.json"
+    "*.json",
   ],
   // 当前的开发环境
   "env": {
@@ -43,21 +65,24 @@ categories:
     ".git"
   ]
 }
-
 ```
 
-### package.json 的配置
+#### `package.json`中`scripts`脚本配置
 
-```javascript
+```bash
  "scripts": {
-    "start": "npx nodemon -x npm run serve",  // 使用nodemon -x 执行脚本， 启动服务
+    "start": "npx nodemon -x npm run serve",  # 使用nodemon -x 执行脚本， 启动服务
     "serve": "node index"
   },
 ```
 
-### 效果：
+#### 效果：
 
 ![Nodemon](//tiven.cn/assets/img/img-nodemon-02.jpg)
 
 * 参考文档：
 1. https://www.npmjs.com/package/nodemon
+
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/1f405e26/ "天問博客")

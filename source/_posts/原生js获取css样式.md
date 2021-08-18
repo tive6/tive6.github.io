@@ -74,3 +74,6 @@ function getStyle(obj,attr){
 * http://blog.csdn.net/u011043843/article/details/39811211
 * http://www.zhangxinxu.com/wordpress/2012/05/getcomputedstyle-js-getpropertyvalue-currentstyle/
 
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/c921c1a0/ "天問博客")

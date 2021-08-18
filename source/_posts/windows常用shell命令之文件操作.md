@@ -52,3 +52,7 @@ echo 'Hello World' > test.js
 dir
 
 ```
+
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/f8a10c7/ "天問博客")

@@ -83,3 +83,6 @@ git push origin master -f
 
 再查看远程的提交记录，发现`commit--2`就没有了。
 
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/b87d03eb/ "天問博客")

@@ -91,7 +91,10 @@ alert('Hello Word !');
 #### 而我。。。ing...
 <a href="//tiven.cn" alt="tiven"><img src="//tiven.cn/logo.png" width="200" title="WEB前端"/></a>
 * 感谢阅读，让我们一起来开启大牛之路吧！
+
 >> come on -0.0-
 
+---
 
+欢迎访问：[个人博客地址](//tiven.cn/p/662250b0/ "天問博客")
 

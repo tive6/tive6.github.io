@@ -66,5 +66,8 @@ console.log(arr);// [ 22, 10, 8, 2, 1 ]
 W3C也有相关说明，[以供参考](http://www.w3school.com.cn/jsref/jsref_sort.asp "sort方法")。
 >> 谢谢~O(∩_∩)O~
 
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/cf14cb7c/ "天問博客")
 
 

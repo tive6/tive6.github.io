@@ -157,4 +157,6 @@ document.getElementById('obj');//javascript
 * Markdown在各个地方解析的情况不同，因此结果显示会有所区别，有的平台不能解析表格。
 * 此文仅供参考，如有不详之处，望见谅。
 
+---
 
+欢迎访问：[个人博客地址](//tiven.cn/p/fca0e73e/ "天問博客")
