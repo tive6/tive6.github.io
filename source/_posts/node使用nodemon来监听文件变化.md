@@ -9,14 +9,18 @@ categories:
   - 开发者笔记
 ---
 
-知识边界: `nodemon` 就像是vue里面的开启`热加载`功能一样，开发者只要放心开发，不用修改一点就需要重新启动项目，进行测试
+`Nodemon` 是一款非常实用的工具，用来监控你 `node.js` 源代码的任何变化和自动重启你的服务器。`nodemon` 就像是vue里面的开启`热加载`功能一样，开发者只要放心开发，不用修改一点就需要重新启动项目。
+
+![Nodemon](//tiven.cn/assets/img/img-nodemon-01.png)
 
 <!-- more -->
 
 ### 使用方法：
 
-1.     安装：npm install nodemon -D
-2.     添加配置文件 nodemon.json,内容如下：
+1. 安装：`npm install -g nodemon`    # 全局安装
+2. 添加配置文件 `nodemon.json`
+   
+内容如下：
 
 ```javascript
 由于nodemon 监听的文件范围是整个node项目，有点广，所以通过配置文件监听我们需要的。
@@ -53,4 +57,7 @@ categories:
 
 ### 效果：
 
-![Nodemon](https://img-blog.csdnimg.cn/20201218110706478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNDk5Nzgy,size_16,color_FFFFFF,t_70)
+![Nodemon](//tiven.cn/assets/img/img-nodemon-02.jpg)
+
+* 参考文档：
+1. https://www.npmjs.com/package/nodemon

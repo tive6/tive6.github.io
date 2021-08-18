@@ -1,7 +1,6 @@
 ---
 title: seaJs模块化开发简单入门
 tags:
-  - seajs
   - js
   - CMD
   - 模块化

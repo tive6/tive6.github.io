@@ -21,9 +21,9 @@ mongoose.connect('mongodb://localhost/test');// test ：是数据库名字 conne
 // 创建了一个模型（相当于创建了一个“类”） ，People的模型。所有的People，都有名字，是字符串类型，
 var People = mongoose.model('People',{name:String});
 // 实例化一个People
-var zmnaer = new People({name:'zmnaer'});
+var tiven = new People({name:'Tiven'});
 // 调用这个People的save方法，保存这个人
-zmnaer.save(function(err){
+tiven.save(function(err){
     console.log('连接成功');
 });
 ```

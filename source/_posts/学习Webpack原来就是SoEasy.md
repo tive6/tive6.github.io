@@ -57,7 +57,7 @@ date: 2017-03-14 11:41:38
 ```
 * b.js
 ```javascript
-    module.exports = 'zmnaer.com';
+    module.exports = 'tiven.cn';
 ```
 * style.css
 ```javascript
@@ -207,7 +207,7 @@ date: 2017-03-14 11:41:38
 
 ### 2、BannerPlugin
 * 这个插件能在打包后的js文件开头位置增加一个`头注释`。配置:
-        plugins:[new webpack.BannerPlugin('webpack file by zm.')]
+        plugins:[new webpack.BannerPlugin('webpack file by tiven.')]
 * 更多请参考：[官网Plugins](http://webpack.github.io/docs/using-plugins.html)
 
 ---
@@ -257,8 +257,8 @@ webpack-dev-server是一个轻量级的服务器，修改文件源码后，自�
 
 *提示：*`i`是`install`的简写，推荐使用
 * 参考文档：
-0. http://webpack.github.io/docs/
-0. https://webpack.js.org/
+1. http://webpack.github.io/docs/
+1. https://webpack.js.org/
 1. http://webpackdoc.com/
 2. http://www.cnblogs.com/haogj/p/5160821.html
 3. http://www.jb51.net/article/96646.htm

@@ -36,8 +36,8 @@ $(function(){
   var $nowWrap = $('<div id="snow-wrap"/>')
   $nowWrap.appendTo('body');
   $.fn.snow({
-    minSize: 10, /* 定义雪花最小尺寸 */
-    maxSize: 30,/* 定义雪花最大尺寸 */
+    minSize: 5, /* 定义雪花最小尺寸 */
+    maxSize: 25,/* 定义雪花最大尺寸 */
     newOn: 300  /* 定义密集程度，数字越小越密集 */
   });
 });

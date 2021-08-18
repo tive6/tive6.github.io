@@ -20,17 +20,17 @@ JavaScript字符串是引号中的零个或多个字符。
 * 1、length——长度
 
 ```
-var str='zmnaer';
-console.log(str.length);// 6
+var str='tiven';
+console.log(str.length);// 5
 /*引号中间的空格也算长度*/
 ```
 
 * 2、charAt()——字符串索引对应的值
 
 ```
-var str='zmnaer';
-console.log(str.charAt());// z
-console.log(str.charAt(0));// z
+var str='tiven';
+console.log(str.charAt());// t
+console.log(str.charAt(0));// t
 console.log(str.charAt(11));// (空)
 console.log(str.charAt(-1));// (空)
 /*不写值，默认为0，大于字符串最大长度和取负数都返回值为空*/
@@ -39,13 +39,13 @@ console.log(str.charAt(-1));// (空)
 * 3、charCodeAt()——Unicode编码值
 
 ```
-alert('周'.charCodeAt());// 21608
+alert('天'.charCodeAt());// 22825
 ```
 
 * 4、fromCharCode()——反译Unicode码
 
 ```
-console.log(String.fromCharCode(21608,22937));// 周妙
+console.log(String.fromCharCode(22825,21839));// 天問
 ```
 
 * 5、substring——字符串截取
@@ -80,23 +80,23 @@ console.log(str.slice(-2,-4));// 个字
 * 7、toUpperCase()——转换成大写
 
 ```
-console.log('zmnaer'.toUpperCase());// ZMNAER
+console.log('tiven'.toUpperCase());// TIVEN
 ```
 
 * 8、toLowerCse()——转换成小写
 
 ```
-console.log('ZMnaer'.toLowerCse());// zmnaer
+console.log('Tiven'.toLowerCse());// tiven
 ```
 
 * 9、split——字符串切割
 
 ```
-var str='www.zmnaer.com';
-console.log(str.split('.');// ['www','zmnaer','com']
-console.log('zmnaer'.split());// ['zmnaer']
-console.log('zmnaer'.split(''));// ['z','m','n','a','e','r']
-console.log('zmnaer'.split('m'));// ['z','naer']
+var str='www.tiven.cn';
+console.log(str.split('.');// ['www','tiven','cn']
+console.log('tiven'.split());// ['tiven']
+console.log('tiven'.split(''));// ['t','i','v','e','n']
+console.log('tiven'.split('v'));// ['ti','en']
 ```
 
 * 10、splice——删除、替换、添加（数组）

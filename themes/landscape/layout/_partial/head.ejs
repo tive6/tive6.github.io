@@ -5,10 +5,7 @@
     <!--百度抓取验证-->
     <meta name="baidu-site-verification" content="code-CXpwRxPCFG" />
     <!--定义网页的关键字，供搜索引擎搜索-->
-    <meta
-            name="keywords"
-            content="<%= config.keywords %>"
-    />
+    <meta name="keywords" content="<%= config.keywords %>" />
     <!--设置网页作者-->
     <meta name="author" content="<%= config.author %>" />
     <!--设置网页版权-->
@@ -32,7 +29,8 @@
         <% if (title){ %>
           <%= title %> |
         <% } %>
-        <%= config.title %></title>
+        <%= config.title %>
+    </title>
     <%- open_graph({
         twitter_id: theme.twitter,
         google_plus: theme.google_plus,
@@ -51,18 +49,12 @@
         <link rel="shortcut icon" type="image/x-icon" href="<%= theme.favicon %>" />
     <% } %>
     <% if (config.highlight.enable){ %>
-        <link
-                href="//fonts.googleapis.com/css?family=Source+Code+Pro"
-                rel="stylesheet"
-                type="text/css"
-        />
+        <%- css("css/googleapis-fonts") %>
     <% }; %>
     <%- css("css/style") %> <%- partial("google-analytics") %>
-
-    <!--百度统计-->
-    <%- partial("baidu_tongji") %>
-
     <% if (theme.fancybox){ %>
         <%- css("fancybox/jquery.fancybox") %>
     <% } %>
+    <!--百度统计-->
+    <%- partial("baidu_tongji") %>
 </head>
