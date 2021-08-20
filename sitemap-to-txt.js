@@ -21,9 +21,19 @@ fs.readFile(__dirname + '/public/sitemap.xml', function(err, data) {
 })
 
 function createTxt(str) {
-  fs.writeFile('urls.txt', str, 'utf8', function(err, res){
+  fs.writeFile('sitemap.txt', str, 'utf8', function(err, res){
     if (!err) {
-      console.log('urls.txt 写入成功')
+      console.log('sitemap.txt 写入成功')
+      copySitemap()
+    }
+  })
+}
+
+function copySitemap() {
+  // copyFileSync
+  fs.copyFile('./sitemap.txt', './source/sitemap.txt', function (err, res){
+    if (!err) {
+      console.log('sitemap.txt copy成功')
     }
   })
 }
