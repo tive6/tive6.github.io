@@ -18,6 +18,28 @@
   line-height: line-height
   font-size: 0.85em
 
+@keyframes love-animate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+
+.footer-love
+  font-size 1.5em
+  color: #ff0000;
+  display: inline-block;
+  margin: 0 5px;
+  animation: love-animate 1.2s ease-in-out infinite;
+
 .fixed-btn
   cursor: pointer
   position: fixed

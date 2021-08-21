@@ -81,6 +81,7 @@ tag_map:
   规范: standard
   诗词: poetry
   致青春: youth
+  草稿: draft
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

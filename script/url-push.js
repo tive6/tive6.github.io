@@ -10,8 +10,16 @@ axios({
     data: {
         siteUrl: 'https://tiven.cn',
         urlList: [
+            'https://tiven.cn/p/661a7b1e/',
+            'https://tiven.cn/p/3483c10a/',
+            'https://tiven.cn/p/ba033cf5/',
+            'https://tiven.cn/p/b87d03eb/',
+            'https://tiven.cn/p/26a2eea/',
+            'https://tiven.cn/p/367439f7/',
+            'https://tiven.cn/p/4f5362b7/',
+            'https://tiven.cn/p/662250b0/',
+            'https://tiven.cn/p/1f405e26/',
             'https://tiven.cn/p/d585de37/',
-            'https://tiven.cn/p/cf14cb7c/'
         ],
     }
 }).then(res=>{
