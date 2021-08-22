@@ -48,3 +48,7 @@ $ hexo p <filename>
 之后的 `hexo generate` 与 `hexo deploy` 的用法就完全一样了。
 
 若日后想将正式文章转为为草稿，只需手动将文章从 `source/_posts` 目录移动到 `source/_drafts` 目录即可。
+
+---
+
+欢迎访问：[个人博客地址](//tiven.cn/p/ab5d2a72/ "天問博客")
