@@ -1,9 +1,10 @@
 const fs = require('fs')
+const path = require('path')
 const xml2js = require('xml2js')
 
 const Parser = new xml2js.Parser()
 // console.log(Parser)
-fs.readFile(__dirname + '/public/sitemap.xml', function(err, data) {
+fs.readFile(path.join(__dirname, '../public/sitemap.xml'), function(err, data) {
   Parser.parseString(data, function (err, result) {
     if (!err) {
       let urls = result.urlset.url
@@ -21,7 +22,7 @@ fs.readFile(__dirname + '/public/sitemap.xml', function(err, data) {
 })
 
 function createTxt(str) {
-  fs.writeFile('sitemap.txt', str, 'utf8', function(err, res){
+  fs.writeFile(path.join(__dirname, '../sitemap.txt'), str, 'utf8', function(err, res){
     if (!err) {
       console.log('sitemap.txt 写入成功')
       copySitemap()
@@ -31,7 +32,10 @@ function createTxt(str) {
 
 function copySitemap() {
   // copyFileSync
-  fs.copyFile('./sitemap.txt', './source/sitemap.txt', function (err, res){
+  fs.copyFile(
+    path.join(__dirname, '../sitemap.txt'),
+    path.join(__dirname, '../source/sitemap.txt'),
+    function (err, res){
     if (!err) {
       console.log('sitemap.txt copy成功')
     }
