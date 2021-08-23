@@ -7,6 +7,13 @@ path="/data/www/blog/"
 #pwd
 #echo $1
 
+if [ -d ${path}zip ];then
+  echo "${path}zip 文件夹存在"
+  else
+  echo "${path}zip 文件夹不存在"
+  mkdir ${path}zip
+fi
+
 #cd ${path}blog
 
 mkdir ${path}zip
