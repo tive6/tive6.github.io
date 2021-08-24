@@ -146,7 +146,7 @@ deploy:
 
 # 代码压缩
 minify:
-  enable: true
+  enable: false
   html:
   css:
     exclude:

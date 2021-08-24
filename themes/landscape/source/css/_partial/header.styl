@@ -50,7 +50,7 @@
 $logo-text
   text-decoration: none
   color: #fff
-  font-weight: 300
+  font-weight: 400
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
 #logo
@@ -64,6 +64,17 @@ $logo-text
   font-size: subtitle-size
   line-height: subtitle-size
   letter-spacing: 1px
+  text-align center
+  position relative
+  display block
+  width 100%
+
+  .inner-span
+    @extend $logo-text
+    display inline-block
+    font-size: subtitle-size
+    line-height: subtitle-size
+    letter-spacing: 1px
 
 #subtitle-wrap
   margin-top: subtitle-size

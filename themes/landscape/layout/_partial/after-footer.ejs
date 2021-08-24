@@ -20,6 +20,11 @@
   <%- js("fancybox/jquery.fancybox.pack") %>
 <% } %>
 
+<!-- 副标题动画 -->
+<% if (theme.subtitle){ %>
+  <%- js("js/text-effect.js") %>
+<% } %>
+
 <%- js("js/script") %>
 <!-- 页面点击小红心 -->
 <%- js("js/love.js") %>

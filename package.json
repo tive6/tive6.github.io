@@ -6,7 +6,7 @@
     "version": "3.9.0"
   },
   "scripts": {
-    "start": "hexo server",
+    "start": "hexo server --config server.config.yml",
     "dev": "nodemon --watch _config.yml --exec \"hexo clean && hexo g && hexo s \"",
     "build": "hexo generate",
     "clean": "hexo clean",
@@ -19,8 +19,6 @@
     "prettier": "prettier --write **/*.{js,html,styl,ejs}"
   },
   "dependencies": {
-    "adm-zip": "^0.5.5",
-    "axios": "^0.21.1",
     "hexo": "^3.9.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-deployer-git": "^0.2.0",
@@ -39,9 +37,14 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-wordcount": "^6.0.1",
-    "hexo-yam": "^5.0.0",
+    "hexo-yam": "^5.0.0"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.5.5",
+    "axios": "^0.21.1",
     "node-ssh": "^12.0.0",
     "rimraf": "^3.0.2",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "svgo": "^2.4.0"
   }
 }
