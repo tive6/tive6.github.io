@@ -18,6 +18,7 @@ fancybox: true
 # 导航栏位置
 sidebar: right
 widgets:
+- recent_posts
 # 归类
 - category
 # 标签
@@ -25,7 +26,6 @@ widgets:
 # 标签云
 #- tagcloud
 - archive
-- recent_posts
 # 浏览量统计
 ## - popular_posts
 # 友情链接

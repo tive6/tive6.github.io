@@ -30,10 +30,10 @@ https://tiven.cn/tags/js/
 https://tiven.cn/tags/node/ 
 https://tiven.cn/tags/fs/ 
 https://tiven.cn/tags/Vue/ 
-https://tiven.cn/tags/Python/ 
-https://tiven.cn/tags/Selenium/ 
 https://tiven.cn/tags/babel/ 
 https://tiven.cn/tags/ES6/ 
+https://tiven.cn/tags/Python/ 
+https://tiven.cn/tags/Selenium/ 
 https://tiven.cn/tags/html/ 
 https://tiven.cn/tags/update/ 
 https://tiven.cn/tags/mongodb/ 
