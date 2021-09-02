@@ -16,6 +16,7 @@
     "prezip": "npm run clean",
     "zip": "npm run build && node zip.js",
     "postzip": "node deploy.js",
+    "copy": "node script/sitemap-to-txt.js",
     "prettier": "prettier --write **/*.{js,html,styl,ejs}"
   },
   "dependencies": {
