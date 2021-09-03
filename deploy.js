@@ -11,6 +11,7 @@ const {
   localPath,
   remotePath,
   shellPath,
+  shellName,
 } = config
 
 const ssh = new NodeSSH()
@@ -30,12 +31,12 @@ ssh.connect({
     },
     {
       local: path.join(__dirname, 'deploy.sh'),
-      remote: `${shellPath}deploy.sh`,
+      remote: `${shellPath}${shellName}`,
     },
   ])
 }).then(res=>{
   console.log(`${filename} && shell脚本上传成功`)
-  return ssh.execCommand(`sh deploy.sh ${filename}`, { cwd: shellPath })
+  return ssh.execCommand(`sh ${shellName} ${filename}`, { cwd: shellPath })
 }).then(res=>{
   console.log(res.stdout)
   console.log('shell脚本执行成功')

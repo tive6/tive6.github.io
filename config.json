@@ -5,5 +5,6 @@
   "rsaPath": "D:/ssh/id_rsa",
   "localPath": "D:/zip",
   "remotePath": "/data/www/blog/",
-  "shellPath": "/data/www/shell/"
+  "shellPath": "/data/www/shell/",
+  "shellName": "deploy.hexo.sh"
 }
