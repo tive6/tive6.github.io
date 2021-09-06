@@ -1,7 +1,7 @@
 ---
 title: windows常用shell命令之文件操作
 tags:
-  - shell
+  - Shell
 categories:
   - 开发者笔记
 abbrlink: f8a10c7
