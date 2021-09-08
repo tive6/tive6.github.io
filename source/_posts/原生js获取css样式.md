@@ -1,7 +1,7 @@
 ---
 title: 原生js获取css样式
 tags:
-  - js
+  - JS
 categories:
   - 前端
 abbrlink: c921c1a0

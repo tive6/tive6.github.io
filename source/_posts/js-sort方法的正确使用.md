@@ -1,7 +1,7 @@
 ---
 title: js-sort方法的正确使用
 tags:
-  - js
+  - JS
 categories:
   - 前端
 abbrlink: cf14cb7c

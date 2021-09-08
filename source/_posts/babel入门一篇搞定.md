@@ -3,7 +3,7 @@ title: babel入门一篇搞定
 tags:
   - babel
   - ES6
-  - js
+  - JS
 categories:
   - 学习笔记
 abbrlink: 4f5362b7

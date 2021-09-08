@@ -1,7 +1,7 @@
 ---
 title: JS中字符串和数组的基本操作
 tags:
-  - js
+  - JS
 categories:
   - 前端
 abbrlink: 26a2eea

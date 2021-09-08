@@ -2,7 +2,7 @@
 title: Vue中父子组件生命周期执行顺序
 tags:
   - Vue
-  - js
+  - JS
 categories:
   - 开发者笔记
 abbrlink: 367439f7

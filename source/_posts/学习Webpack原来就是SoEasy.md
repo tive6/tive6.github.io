@@ -2,7 +2,7 @@
 title: 学习webpack原来就是SoEasy
 tags:
   - webpack
-  - js
+  - JS
   - 前端优化
 categories:
   - 前端

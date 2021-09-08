@@ -27,7 +27,7 @@ npm i -D compression-webpack-plugin
 
 ## 配置
 
-* 在 `.umirc.ts` 或 `config/config.ts` 中配置项目和插件
+* 在 `.umirc.ts` 或 `config/config.ts` 中进行配置
 
 ```js
 import { defineConfig } from 'umi'
