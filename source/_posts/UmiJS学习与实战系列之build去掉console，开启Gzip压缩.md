@@ -9,7 +9,7 @@ categories:
   - 开发者笔记
 ---
 
-`UmiJS`项目打完体积比较大，首次加载比较慢，为了解决这个问题，执行`build`时移除`console`，并开启了`Gzip压缩`。
+`UmiJS`项目打完包体积比较大，首次加载比较慢，为了解决这个问题，执行`build`时移除`console`，并开启了`Gzip压缩`。
 
 ![UmiJS](//tiven.cn/assets/img/img-umi-01.jpg)
 
