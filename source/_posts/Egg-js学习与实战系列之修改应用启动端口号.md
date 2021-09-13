@@ -9,7 +9,7 @@ abbrlink: 9836898b
 date: 2021-09-12 21:41:21
 ---
 
-默认情况`egg.js`启动的端口是是`7001`，如果该端口被占用，想修改其他端口的话，那么就要进行如下配置：
+默认情况`egg.js`启动的端口是`7001`，如果该端口被占用，想修改其他端口的话，那么就要进行如下配置：
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ module.exports = appInfo => {
      **/
     const config = exports = {};
 
-    // 加入代码 start
+    // code start
     config.cluster = {
         listen: {
             path: '',
@@ -40,7 +40,7 @@ module.exports = appInfo => {
             hostname: '127.0.0.1', // 0.0.0.0
         }
     }
-    // 加入代码 end
+    // code end
     
     return {
         ...config,
