@@ -11,7 +11,7 @@ categories:
 
 linux `shell` 可以用户定义函数，然后在`shell`脚本中可以随便调用。项目开发中利用`Shell`脚本可以很方便进行工程化，自动化操作。
 
-![Shell函数](//tiven.cn/assets/img/img-shell.jpg)
+![Shell函数](//tiven.cn/static/img/img-shell-function-kj0FsQTG6So12d5Sd5R5z.jpg)
 
 <!-- more -->
 
