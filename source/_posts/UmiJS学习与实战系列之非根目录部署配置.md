@@ -12,7 +12,7 @@ categories:
 当使用`Vue`、`React`等框架来构建项目，一般都是生成的`SPA应用`（单页面应用）。
 如果一个`域名`（服务器）要部署多个这种`SPA应用`，就需要做打包配置，页面才能正常的加载和访问。
 
-[comment]: <> (![UmiJS]&#40;//tiven.cn/assets/img/img-umi-01.jpg&#41;)
+![UmiJS-Deploy](https://tiven.cn/static/img/img-umi-deploy-r2j-FfC28xsCmnEDZ1Rux.jpg)
 
 <!-- more -->
 

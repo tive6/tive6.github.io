@@ -12,7 +12,7 @@ categories:
 
 在 `Vue2` 中，异步组件处理使用 `import` 就可以很轻松实现。但是在`Vue 3.x` 中，对异步组件的使用跟 `Vue 2.x` 完全不同了。
 
-![Vue3.0异步组件](//tiven.cn/static/img/img-vue-dynamic-ZAvXFiJm_SFrFwQNt41CW.jpg)
+![Vue3.0-Vite](//tiven.cn/static/img/img-vue-dynamic-ZAvXFiJm_SFrFwQNt41CW.jpg)
 
 <!-- more -->
 
