@@ -11,6 +11,8 @@ date: 2021-09-12 21:41:21
 
 默认情况`egg.js`启动的端口是`7001`，如果该端口被占用，想修改其他端口的话，那么就要进行如下配置：
 
+![EggJS](https://tiven.cn/static/img/img-eggjs-service-2sMvHXzfGw56wKUBOhbMm.jpg)
+
 <!-- more -->
 
 * 在 `config/config.default.js` 配置如下代码：
@@ -48,6 +50,9 @@ module.exports = appInfo => {
 };
 ```
 
+参考文档：
+* https://eggjs.org/api/Config.html#cluster
+
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/9836898b/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/9836898b/ "天問博客")

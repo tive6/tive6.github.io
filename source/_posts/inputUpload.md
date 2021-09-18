@@ -1,7 +1,7 @@
 ---
 title: 实现input图片上传预览的各种坑
 tags:
-  - update
+  - Upload
   - JS 
 categories:
   - 前端
