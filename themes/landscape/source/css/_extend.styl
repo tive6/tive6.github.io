@@ -61,3 +61,12 @@ $base-style
     list-style: decimal
   dt
     font-weight: bold
+
+.clearfix:before,
+.clearfix:after {
+  content '';
+  display block
+  clear both
+  visibility hidden
+  height 0
+}

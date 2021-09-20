@@ -72,6 +72,7 @@
     border-collapse: collapse
     border-spacing: 0
     border: 1px solid #ddd
+    table-layout fixed
   th
     font-weight: bold
     border-bottom: 1px solid color-border
@@ -152,6 +153,13 @@
     text-decoration: none
     //&:hover
     //  color: color-default
+.article-tag-list {
+  clearfix()
+}
+
+.post-stat {
+  padding-top 10px
+}
 
 .article-tag-list-item
   float: left
@@ -406,7 +414,25 @@ $article-gallery-ctrl
   border: none;
 }
 
-.post-text-count {
+.post-text-count,
+.post-read-time {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   color: #888;
+  &:before{
+    font-family: font-icon
+    margin-right 5px
+  }
+}
+
+.post-text-count {
+  &:before{
+    content '\f02d' // f11c f080
+  }
+}
+
+.post-read-time {
+  margin-left 10px
+  &:before{
+    content '\f06e'
+  }
 }
