@@ -5,13 +5,14 @@
     // console.log(str)
     // let box = document.getElementById('box')
     // box.innerHTML = str
+    $('#web_site_today_pv').text(res.todayPv)
     $('#web_site_pv').text(res.sitePv)
   }
   
   let script = document.createElement('script')
   let  { host, origin, pathname } = location
   let url = encodeURIComponent(origin+pathname)
-  // script.src = `http://127.0.0.1:7001/api/web/jsonp/recordVisits?callback=getData&v=${Date.now()}&url=${url}`
+  // script.src = `http://127.0.0.1:7001/api/web/jsonp/recordVisits?callback=getVisits&v=${Date.now()}&url=${url}`
   script.src = `https://tiven.cn/api/web/jsonp/recordVisits?callback=getVisits&v=${Date.now()}&url=${url}`
   document.body.appendChild(script)
 }();
