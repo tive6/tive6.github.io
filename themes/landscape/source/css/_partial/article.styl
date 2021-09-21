@@ -11,6 +11,10 @@
 .article-date
   @extend $block-caption
   float: left
+  &:before {
+    font-family: font-icon
+    content '\f073' // f133
+  }
 
 .article-category
   float: left
@@ -35,6 +39,7 @@
   color: color-default
   line-height: line-height-title
   transition: color 0.2s
+  //text-align center
   a&:hover
     color: color-link
 
@@ -158,7 +163,8 @@
 }
 
 .post-stat {
-  padding-top 10px
+  text-align center
+  padding-bottom 10px
 }
 
 .article-tag-list-item
@@ -426,13 +432,13 @@ $article-gallery-ctrl
 
 .post-text-count {
   &:before{
-    content '\f02d' // f11c f080
+    content '\f02d' // f11c f080 f02d
   }
 }
 
 .post-read-time {
   margin-left 10px
   &:before{
-    content '\f06e'
+    content '\f017' // f06e
   }
 }

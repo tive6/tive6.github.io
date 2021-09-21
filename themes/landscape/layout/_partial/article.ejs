@@ -13,6 +13,10 @@
     <header class="article-header">
       <%- partial('post/title', {class_name: 'article-title'}) %>
       <hr style="border: none; border-bottom: 1px solid #ddd" />
+      <div class="post-stat">
+        <span class="post-text-count">文章字数：<%= wordcount(post.content) %></span>
+        <span class="post-read-time">阅读时长：<%= min2read(post.content) %>分钟</span>
+      </div>
     </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
@@ -25,10 +29,6 @@
     </div>
     <footer class="article-footer">
       <%- partial('post/tag') %>
-      <div class="post-stat">
-        <span class="post-text-count">文章字数：<%= wordcount(post.content) %></span>
-        <span class="post-read-time">阅读时长：<%= min2read(post.content) %>分钟</span>
-      </div>
     </footer>
   </div>
   <% if (!index){ %> <%- partial('post/nav') %> <% } %>
