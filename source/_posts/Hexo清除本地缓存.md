@@ -26,4 +26,4 @@ categories:
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/7d2e931b/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/7d2e931b/ "天問博客")

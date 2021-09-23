@@ -83,6 +83,7 @@ tag_map:
   楚辞: chuci
   致青春: youth
   草稿: draft
+  打印: print
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
