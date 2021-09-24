@@ -11,7 +11,7 @@ categories:
 
 最近用`hexo new post xxx`命令新建文章，一时手抖生成的文字有误，便删除了重新生成。但是发现本地的`localhost`服务上被删除的文章还存在，可以正常访问。
 
-![Hexo-Cache](//tiven.cn/static/img/img-hexo-cache-2Fbpxdf7e--cOX3OYxQlM.jpg)
+![Hexo-Cache](https://tiven.cn/static/img/img-hexo-cache-2Fbpxdf7e--cOX3OYxQlM.jpg)
 
 <!-- more -->
 

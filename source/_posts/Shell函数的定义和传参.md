@@ -7,6 +7,7 @@ tags:
   - Function
 categories:
   - 开发者笔记 
+top: 5
 ---
 
 linux `shell` 可以用户定义函数，然后在`shell`脚本中可以随便调用。项目开发中利用`Shell`脚本可以很方便进行工程化，自动化操作。

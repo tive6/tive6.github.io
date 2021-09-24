@@ -6,11 +6,14 @@ tags:
   - JS
 categories:
   - 开发者笔记
+top: 4
 ---
 
 `Javascript`是一门`弱类型`语言，很灵活，学习门槛低，容易上手。但同时也容易出现误区，遇到很多坑。本篇就专门用来记录日常开发中的易错点。
 
 ![Javascript](https://tiven.cn/static/img/img-js-01-an40onMK-Y-Y6IeYxOwDH.jpg)
+
+<!-- more -->
 
 ## 参数为`引用类型`的函数
 

@@ -103,7 +103,7 @@ pagination_dir: page
 # 站内文章搜索
 search:
   path: search.xml
-  field: post
+  field: all  # post page all
   content: true
   format: html
   limit: 10000
@@ -182,4 +182,7 @@ lazyload:
   preloadRatio: 3 # optional, default is 1
 
 
-
+# 文章置顶
+topindex_generator:
+  per_page: 10
+  order_by: -date
