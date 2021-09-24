@@ -186,3 +186,11 @@ lazyload:
 topindex_generator:
   per_page: 10
   order_by: -date
+
+# admin
+admin:
+  username: tiven
+  password_hash: $2a$10$CXwUfqeoa304WGjprlRnHuRC6sxsGRkqHAKHQopO9z.LM7L.1GMB2
+  secret: my-hexo-blog
+  deployCommand: './deploy.admin.sh'
+
