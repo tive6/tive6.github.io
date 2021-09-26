@@ -14,6 +14,7 @@
   &:before {
     font-family: font-icon
     content '\f073' // f133
+    margin-right 3px
   }
 
 .article-category
@@ -31,6 +32,24 @@
 
 .article-header
   padding: article-padding article-padding 0
+  position relative
+
+.article-top
+  position: absolute;
+  left 0
+  top 0
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+
+.article-top-text
+  width: 72px;
+  transform: rotate(-45deg) translate(-19px, -15px) scale(0.8);
+  background-color: #DB4C52; // FA8D14
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
 
 .article-title
   text-decoration: none
@@ -152,12 +171,27 @@
   line-height: line-height
   border-top: 1px solid color-border
   padding-top: line-height
-  margin: 0 article-padding article-padding
+  margin: 0 article-padding 18px
   a
     color: #fff
     text-decoration: none
     //&:hover
     //  color: color-default
+
+.article-footer-icon {
+  float left
+  height 20px
+  margin-right 15px
+  &:before {
+    color #FF945C
+    font-size 18px
+    font-family: font-icon
+    content '\f02c'
+    position relative
+    top 1px
+  }
+}
+
 .article-tag-list {
   clearfix()
 }
@@ -421,24 +455,36 @@ $article-gallery-ctrl
 }
 
 .post-text-count,
+.post-read-count,
 .post-read-time {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   color: #888;
+  margin-left 3px
   &:before{
     font-family: font-icon
-    margin-right 5px
+    margin-right 2px
+  }
+  @media mq-mobile {
+    font-size 12px
   }
 }
 
 .post-text-count {
+  margin-left 0
   &:before{
     content '\f02d' // f11c f080 f02d
   }
 }
 
 .post-read-time {
-  margin-left 10px
   &:before{
     content '\f017' // f06e
   }
 }
+
+.post-read-count {
+  &:before{
+    content '\f06e'
+  }
+}
+

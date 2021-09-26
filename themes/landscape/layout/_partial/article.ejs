@@ -11,11 +11,19 @@
   <div class="article-inner">
     <%- partial('post/gallery') %> <% if (post.link || post.title){ %>
     <header class="article-header">
+      <% if (post.top) { %>
+        <div class="article-top">
+          <div class="article-top-text">置顶</div>
+        </div>
+      <% } %>
       <%- partial('post/title', {class_name: 'article-title'}) %>
       <hr style="border: none; border-bottom: 1px solid #ddd" />
       <div class="post-stat">
-        <span class="post-text-count">文章字数：<%= wordcount(post.content) %></span>
+        <span class="post-text-count">字数：<%= wordcount(post.content) %></span>
         <span class="post-read-time">阅读时长：<%= min2read(post.content) %>分钟</span>
+        <% if (!(post.excerpt && index)){ %>
+          <span class="post-read-count" id="page_pv">阅读：85</span>
+        <% } %>
       </div>
     </header>
     <% } %>
@@ -28,6 +36,7 @@
       <% } %> <% } else { %> <%- post.content %> <% } %>
     </div>
     <footer class="article-footer">
+      <span class="article-footer-icon"></span>
       <%- partial('post/tag') %>
     </footer>
   </div>

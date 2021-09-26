@@ -34,18 +34,13 @@
 <%- js("js/snow.js") %>
 <!-- 搜索 -->
 <%- js("js/search.js") %>
-<!-- 不蒜子统计 -->
-<!--<%- js("js/busuanzi-2.3.pure.mini.js") %>-->
-
-<!-- 360自动收录 -->
-<!--<script>-->
-<!--  (function(){-->
-<!--    var ele = document.createElement('script')-->
-<!--    ele.id = 'sozz'-->
-<!--    ele.src = "https://s.ssl.qhres2.com/ssl/ab77b6ea7f3fbf79.js";-->
-<!--    document.body.appendChild(ele);-->
-<!--  })();-->
-<!--</script>-->
 
 <!-- 自定义统计 -->
 <%- js("js/record-visits.js") %>
+
+<!-- 百度推送 -->
+<% if (config.baidu_push){ %>
+<script>
+  pushBD()
+</script>
+<% } %>

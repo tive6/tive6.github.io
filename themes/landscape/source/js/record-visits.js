@@ -7,6 +7,10 @@
     // box.innerHTML = str
     $('#web_site_today_pv').text(res.todayPv)
     $('#web_site_pv').text(res.sitePv)
+    let $pagePv = $('#page_pv')
+    if ($pagePv) {
+      $pagePv.text(`阅读：${res.pagePv}`)
+    }
   }
   
   let script = document.createElement('script')

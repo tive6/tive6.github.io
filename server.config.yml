@@ -111,6 +111,9 @@ search:
 ## 百度统计
 baidu_tongji: true
 
+## 百度推送
+baidu_push: false
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -189,8 +192,10 @@ topindex_generator:
 
 # admin
 admin:
+  enable: false
   username: tiven
   password_hash: $2a$10$CXwUfqeoa304WGjprlRnHuRC6sxsGRkqHAKHQopO9z.LM7L.1GMB2
   secret: my-hexo-blog
   deployCommand: './deploy.admin.sh'
+
 

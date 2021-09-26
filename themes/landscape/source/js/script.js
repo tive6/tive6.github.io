@@ -192,4 +192,17 @@ document.addEventListener('DOMContentLoaded', function(){
   /* 文章搜索 */
   var path = "/search.xml";
   searchFunc(path, 'local-search-input', 'local-search-result');
-})
+});
+
+// 百度推送
+function pushBD() {
+  var bp = document.createElement('script');
+  var protocol = window.location.protocol;
+  if (protocol.includes('https')) {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  document.body.appendChild(bp)
+}
