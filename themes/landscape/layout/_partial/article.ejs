@@ -36,7 +36,11 @@
       <% } %> <% } else { %> <%- post.content %> <% } %>
     </div>
     <footer class="article-footer">
-      <span class="article-footer-icon"></span>
+      <% if (is_post() || is_home()) { %>
+        <span class="article-footer-icon"></span>
+      <% } else { %>
+        <span class="article-footer-icon like">（（ｏ-ω-）♡（－ω-ｏ））➳❤❤❤</span>
+      <% } %>
       <%- partial('post/tag') %>
     </footer>
   </div>
