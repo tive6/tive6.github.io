@@ -6,6 +6,7 @@ menu:
   日常笔记: /notes
   图片压缩: https://tiven.cn/service/image/compress
   Txt2Excel: https://tiven.cn/service/tools/txt-to-excel
+  留言: /comments
   关于: /about
 #  标签: /tag
 #  标签云: /tagcloud
@@ -72,3 +73,16 @@ post_wordcount:
   min2read: true #单篇阅读时长
   totalcount: true #站点总字数
   separated_meta: true
+
+# valine comment system. https://valine.js.org
+valine:
+  enable: true # if you want use valine,please set this value is true
+  appId: r1dLByknj47xfH43HURm6E8y-gzGzoHsz # leancloud application app id
+  appKey: bIhGLvNYin6d2N6gmQuMTFXE # leancloud application app key
+  notify: true # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: true # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: wavatar # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Biu Biu Biu 〜 # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info
