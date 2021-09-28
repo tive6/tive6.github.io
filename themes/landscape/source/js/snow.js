@@ -35,7 +35,7 @@
 $(function(){
   var $nowWrap = $('<div id="snow-wrap"/>')
   $nowWrap.appendTo('body');
-  var size = (/(Mobile)/).test(window.navigator.userAgent) ? [5, 25] : [10, 40]
+  var size = $(document).width() < 764 ? [5, 25] : [10, 40]
   $.fn.snow({
     minSize: size[0], /* 定义雪花最小尺寸 */
     maxSize: size[1],/* 定义雪花最大尺寸 */
