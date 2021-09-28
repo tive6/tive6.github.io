@@ -45,7 +45,7 @@
 </script>
 <% } %>
 
-
+<!-- 评论插件 -->
 <% if(theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
   <%- js('https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js') %>
   <script>
@@ -53,21 +53,19 @@
     var guest_info = '<%= theme.valine.guest_info %>'.split(',').filter(function(item){
       return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = '<%= theme.valine.notify %>' === 'true';
-    var verify = '<%= theme.valine.verify %>' === 'true';
     new Valine({
       el: '.vcomment',
-      notify: notify,
-      verify: verify,
-      appId: "<%= theme.valine.appId %>",
-      appKey: "<%= theme.valine.appKey %>",
-      placeholder: "<%= theme.valine.placeholder %>",
-      pageSize:'<%= theme.valine.pageSize %>',
-      avatar:'<%= theme.valine.avatar %>',
-      lang:'<%= theme.valine.lang %>',
-      visitor: true,
-      recordIP: true,
-      // serverURLs: 'https://tiven.cn',
+      notify: '<%= theme.valine.notify %>' === 'true',
+      verify: '<%= theme.valine.verify %>' === 'true',
+      appId: '<%= theme.valine.appId %>',
+      appKey: '<%= theme.valine.appKey %>',
+      placeholder: '<%= theme.valine.placeholder %>',
+      pageSize: '<%= theme.valine.pageSize %>',
+      avatar: '<%= theme.valine.avatar %>',
+      lang: '<%= theme.valine.lang %>',
+      visitor: '<%= theme.valine.visitor %>' === 'true',
+      recordIP: '<%= theme.valine.recordIP %>' === 'true',
+      serverURLs: '<%= theme.valine.serverURLs %>',
     });
   </script>
 <% } %>

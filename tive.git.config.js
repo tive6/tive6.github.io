@@ -2,7 +2,7 @@ module.exports = {
   shell: [
     'git status',
     'git add .',
-    'git commit -m "增加评论功能"',
+    'git commit -m "增加console字符画logo"',
     // 'git push origin test',
     // 'git checkout test',
     // 'git checkout master',

@@ -192,6 +192,39 @@ document.addEventListener('DOMContentLoaded', function(){
   /* 文章搜索 */
   var path = "/search.xml";
   searchFunc(path, 'local-search-input', 'local-search-result');
+
+  // 输出字符画
+  var logoStr = `
+##############################
+##############################
+##############################
+##############################
+######jjjjjjjjjjjjjjjjjjj#####
+######jjjjjjjj#jjjjjjjjjj#####
+######jjjjjjjjj#jjjjjjjj######
+#####jjjjjjjjjjj#jjjjjjj######
+#####jjjjjjjjjjjjjjjjjjj######
+#####jjjjjjjjjjjj#jjjjjj######
+###########jjjjjj#############
+###########jjjjjj#############
+##########jjjjjjj#############
+##########jjjjjj##############
+##########jjjjjj##############
+##########jjjjjj##############
+#########jjjjjjj##############
+#########jjjjjj###############
+#########jjjjjj###############
+#########jjjjjj###############
+#########jjjjjj###############
+########jjjjjj################
+########jjjjjj################
+##############################
+##############################
+##############################
+`
+  var logStr =  logoStr.split('').join(' ')
+  console.log('%c%s', 'color:green', logStr)
+  console.log('%c欢迎访问『天問小站』：', 'color:red', 'https://tiven.cn')
 });
 
 // 百度推送

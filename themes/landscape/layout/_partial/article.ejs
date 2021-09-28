@@ -52,16 +52,11 @@
 
 </article>
 
-<!--<% if (!index && post.comments){ %>-->
-<!--  <section id="comments">-->
-<!--    <div id="disqus_thread">-->
-<!--      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--<% } %>-->
 <% if (!index && post.comments && theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
-  <section id="comments" class="vcomment"></section>
+  <section id="comments">
+    <div class="comment-head">畅所欲言</div>
+    <div  class="vcomment"></div>
+  </section>
 <% } %>
-
 
 <% if (!index){ %> <%- partial('post/nav') %> <% } %>
