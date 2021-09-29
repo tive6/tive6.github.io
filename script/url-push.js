@@ -19,16 +19,16 @@ function pushUrl () {
         data: {
             siteUrl: 'https://tiven.cn',
             urlList: [
-                'https://tiven.cn/p/661a7b1e/',
-                'https://tiven.cn/p/3483c10a/',
-                'https://tiven.cn/p/ba033cf5/',
-                'https://tiven.cn/p/b87d03eb/',
-                'https://tiven.cn/p/26a2eea/',
-                'https://tiven.cn/p/367439f7/',
-                'https://tiven.cn/p/4f5362b7/',
-                'https://tiven.cn/p/662250b0/',
-                'https://tiven.cn/p/1f405e26/',
-                'https://tiven.cn/p/d585de37/',
+                'https://tiven.cn/p/5f5cbec7/',
+                'https://tiven.cn/p/fca0e73e/',
+                'https://tiven.cn/p/a8974376/',
+                'https://tiven.cn/p/cc3c1203/',
+                'https://tiven.cn/p/7d2e931b/',
+                'https://tiven.cn/p/e9eb7987/',
+                'https://tiven.cn/p/f216c7d8/',
+                'https://tiven.cn/p/9836898b/',
+                'https://tiven.cn/p/a0900327/',
+                'https://tiven.cn/p/d41c4425/',
             ],
         }
     }).then(res=>{
