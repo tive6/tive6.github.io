@@ -32,6 +32,10 @@ function createTxt(str) {
 
 function copySitemap() {
   // copyFileSync
+  fs.copyFileSync(
+    path.join(__dirname, '../sitemap.txt'),
+    'E:/dev/front-end/timed-task/sitemap.txt',
+  )
   fs.copyFile(
     path.join(__dirname, '../sitemap.txt'),
     path.join(__dirname, '../source/sitemap.txt'),
