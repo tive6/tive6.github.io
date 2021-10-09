@@ -1,6 +1,6 @@
 const process = require("child_process");
 const axios = require("axios");
-const BAIDU_PUSH_COUNT = 10;
+const BAIDU_PUSH_COUNT = 15;
 const BING_URL_LIST = [
     "https://tiven.cn/p/5f5cbec7/",
     "https://tiven.cn/p/5790753b/",

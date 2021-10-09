@@ -144,6 +144,7 @@ deploy:
   #repository: git@github.com:zm-1006/zm-1006.github.io.git
   repo:
       github: git@github.com:tive6/tive6.github.io.git,master
+      gitee: git@gitee.com:tive/tive.gitee.io.git,master
 #      coding: git@git.coding.net:zmnaer/zmnaer.git,coding-pages
   #branch: master
 

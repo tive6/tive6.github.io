@@ -12,9 +12,9 @@ fs.readFile(path.join(__dirname, '../public/baidusitemap.xml'), function(err, da
       console.log('xml 读取成功')
       console.log(`url条数：${urls.length}`)
       let str = urls.reduce((prev, item)=>{
-        prev += `${item.loc[0]} \n`
+        prev += `\n${item.loc[0]}`
         return prev
-      }, '')
+      }, 'https://tiven.cn')
       // console.log(str)
       createTxt(str)
     }
