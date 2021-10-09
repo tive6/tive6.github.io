@@ -12,7 +12,7 @@ categories:
 当使用 `Vite` 构建项目后，发现只有`localhost` + `端口` 服务，没有 `IP` + `端口`服务。
 运行`npm run dev`，终端提示`Vite启动后提示Network: use '--host' to expose`。
 
-![Vite](//tiven.cn/assets/img/img-vite-01.jpg)
+![Vite](https://tiven.cn/static/img/img-vite-01-qXyz73DxsLe-cWhwRDezi.jpg)
 
 <!-- more -->
 
@@ -75,4 +75,4 @@ vite v2.5.1 dev server running at:
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/a57bb1ad/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/a57bb1ad/ "天問博客")

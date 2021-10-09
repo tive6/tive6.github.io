@@ -87,10 +87,29 @@ comments: true
 58. kbone-api：https://github.com/wechat-miniprogram/kbone-api
 59. uni-app小程序图表组件库-uCharts：https://www.ucharts.cn/
 60. 京东风格Vue移动组件库：https://nutui.jd.com/#/
-61. 免费的图片下载网站:
+61. 免费的图片下载网站：
     * http://www.polayoutu.com/collections
     * https://www.hippopx.com/zh
     * https://unsplash.com/
 62. IP地址解析：https://ip.sb/api/
 63. LeanCloud云服务：https://console.leancloud.cn/apps
 64. wiki.js：https://docs.requarks.io/
+65. 大数据埋点采集：
+    * https://docs.analysys.cn/features/project-manegement/data-integration/virtualizer#1-android-zhi-chi-kong-jian
+    * https://manual.sensorsdata.cn/sa/latest/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%85%A8%E5%9F%8B%E7%82%B9-7541326.html
+    * https://docs.growingio.com/v3/product-manual/data-center/data-management/auto/app
+    * https://docs.zhugeio.com/dev/js_visual_event.html
+66. 移动端日历插件：
+    * https://segmentfault.com/a/1190000013284700
+    * https://github.com/Hzy0913/mpvue-calendar
+    * https://nutui.jd.com/#/Calendar
+    * https://ng.mobile.ant.design/#/components/calendar/zh
+    * https://vcalendar.io/
+    * https://mobile.ant.design/components/calendar-cn/
+67. 接口测试工具：    
+    * https://www.npmjs.com/package/loadtest
+    * https://segmentfault.com/a/1190000019961682
+    * https://blog.csdn.net/Ruffaim/article/details/82145000
+
+
+

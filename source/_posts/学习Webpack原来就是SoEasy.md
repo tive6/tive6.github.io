@@ -11,7 +11,7 @@ date: 2017-03-14 11:41:38
 ---
 在前端大行其道的时代，不管是传统PC端应用，还是日益备受青睐的MobileAPP，功能越来越丰富，用户体验越来越好，必然导致业务逻辑越来越复杂，代码越来越多，客户端加载也是越来越慢。为了解决这些问题，便出现了如火如荼的`模块化`和一系列前端优化工具，[webpack](https://webpack.js.org/)就是优化工具其中之一。
 
-[![Webpack](//tiven.cn/assets/img/img-webpack.jpg "webpack")](//webpack.js.org)
+[![Webpack](https://tiven.cn/static/img/img-webpack-hUU76N-fR3duZ0TcNrzub.jpg "webpack")](//webpack.js.org)
 
 <!-- more -->
 `webpack`是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。本文就简单介绍webpack的基本使用和`config`配置。

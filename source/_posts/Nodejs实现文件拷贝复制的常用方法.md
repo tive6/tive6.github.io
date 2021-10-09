@@ -11,7 +11,7 @@ categories:
 
 做前端开发的童鞋都知道，js是运行在浏览器`沙盒`环境之中，所以`客户端`的js没有权限操作磁盘文件。但是强大的`nodeJS`作为服务器端语言，原生自带`文件系统（fs 模块）`，可以很轻松对文件进行`CRUD`。 本章就是讲述使用nodejs对文件进行`拷贝复制`操作。
 
-![Node-fs](//tiven.cn/assets/img/img-node-fs.jpg)
+![Node-fs](https://tiven.cn/static/img/img-node-fs-BUojvCYl9tf7j6EQoAJK5.jpg)
 
 <!-- more -->
 
@@ -92,4 +92,4 @@ const cpFile = require('cp-file');
 
 --- 
 
-欢迎访问：[个人博客地址](//tiven.cn/p/ba033cf5/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/ba033cf5/ "天問博客")

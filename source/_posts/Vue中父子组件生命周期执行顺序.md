@@ -10,7 +10,7 @@ date: 2021-07-24 14:29:22
 ---
 
 在使用以`Vue`为架构的项目中，当业务逻辑越来越复杂，页面的组件层级结构也会随之增加。所以要想有清晰的逻辑思路，就肯定需要对各种父子组件钩子函数加载时机和执行顺序了如指掌。
-![Vue](//tiven.cn/assets/img/img-vue-logo.png)
+![Vue](https://tiven.cn/static/img/img-vue-life.jpg-ud5s5Y7dLx-rFwDKzOqe6.jpg)
 
 <!-- more -->
 Vue生命周期的官网定义：每个 `Vue` 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。
@@ -49,8 +49,8 @@ parent  destroyed
 ```
 
 Vue官网生命周期图示：
-![Vue](//tiven.cn/assets/img/img-vue-life.png)
+![Vue](https://tiven.cn/assets/img/img-vue-life.png)
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/367439f7/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/367439f7/ "天問博客")

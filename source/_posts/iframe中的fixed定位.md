@@ -12,7 +12,7 @@ date: 2019-09-02 16:20:46
 `position` 属性规定元素的定位类型。任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。
 其中`fixed` 生成绝对定位的元素，相对于`浏览器窗口`进行定位。但是页面中如果嵌套了`iframe`，该是怎么定位呢？一起来看看。
 
-![CSS](//tiven.cn/assets/img/img-css-fixed.jpg)
+![CSS](https://tiven.cn/static/img/img-css-fixed-chiZm6Ep8GTMIt5vTW1ga.jpg)
 
 <!-- more -->
 
@@ -98,7 +98,7 @@ date: 2019-09-02 16:20:46
 
 * 浏览器展示效果
 
-![iframe-Fixed](//tiven.cn/assets/img/img-iframe-fixed.png)
+![iframe-Fixed](https://tiven.cn/static/img/img-iframe-fixed-DsgoFZVXX-L09L51ow1QQ.jpg)
 
 ## 总结
 
@@ -106,5 +106,5 @@ date: 2019-09-02 16:20:46
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/702202dd/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/702202dd/ "天問博客")
 

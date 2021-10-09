@@ -11,7 +11,7 @@ categories:
 
 `ChromeDriver`是google提供的自动化测试接口，是`Selenium`和chrome浏览器进行通信的桥梁，`Selenium`别名是'WebDriver'，`Selenium`通过JsonWireProtocol协议和`ChromeDriver`进行通信，`Selenium`实质上是对这套协议的底层封装，同时提供外部 `WebDriver` 的上层调用类库。
 
-![Selenium](//tiven.cn/assets/img/img-selenium-01.jpg)
+![Selenium](https://tiven.cn/static/img/img-selenium-01-7royM43zcP0bEKzSOe1Cq.jpg)
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ categories:
 
 ## ChromeDriver 下载
 
-![ChromeDriver](//tiven.cn/assets/img/img-chromedriver-01.jpg)
+![ChromeDriver](https://tiven.cn/static/img/img-chromedriver-01-qMzLmubGCZhYZ0L6oFRZY.jpg)
 
 1. 查看使用的Chrome浏览器版本
 2. 下载对应版本的chromedrive, 版本可参照Chrome版本与chromedriver兼容版本对照表
@@ -83,4 +83,4 @@ driver=webdriver.Chrome(chrome_options=chrome_options)
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/30ab5f/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/30ab5f/ "天問博客")

@@ -13,7 +13,7 @@ date: 2018-04-05 10:45:18
 JavaScript字符串是引号中的零个或多个字符。
 数组是一种特殊的变量，它能够一次存放一个以上的值。
 
-![JavaScript](//tiven.cn/assets/img/img-js.jpg)
+![JavaScript](https://tiven.cn/static/img/img-js-7Uw2ZXg53OAQ0e4FUUFDc.jpg)
 
 <!--more-->
 

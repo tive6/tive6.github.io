@@ -14,7 +14,7 @@ date: 2018-08-21 17:39:47
 一般我们都会使用 `hexo new <title>` 来建立文章，这种建立方法会将新文章建立在 `source/_posts` 目录下，当使用 `hexo generate` 编译 `markdown` 文件时，会将其 HTML 结果编译在 `public` 目录下，之后 `hexo deploy` 将会把 `public` 目录下所有文章部署到 `GitHub` / `coding` / `gitee` Pages服务，这是我们熟悉的 Hexo 流程。
 这种建立文章方式的缺点是：若我们同时编辑多篇文章，只要其中一篇文章尚未编辑完成，也会随着 `hexo deploy` 一起部署到 `GitHub` / `coding` / `gitee` Pages服务，造成其他用户看到我们尚未完成的文章。
 
-![Hexo](//tiven.cn/assets/img/img-hexo-01.jpg)
+![Hexo](https://tiven.cn/static/img/img-hexo-01-5TwdLC0wrlKqSGCoFVmIr.jpg)
 
 <!-- more -->
 
@@ -51,4 +51,4 @@ $ hexo p <filename>
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/ab5d2a72/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/ab5d2a72/ "天問博客")

@@ -10,7 +10,7 @@ date: 2021-07-13 15:02:06
 
 在开发中经常会遇到在本地测试的代码或者隐私信息，一不小心提交到了远程仓库，即便立即删除了再提交，但是上次的提交记录在远程依旧可以查看。 特别是像账号密码、key文件这种，很可能造成隐私泄露。
 
-![Git](//tiven.cn/assets/img/img-git-logo.jpg)
+![Git](https://tiven.cn/static/img/img-git-logo-dHEX-4INSJrbE5YrfaHQk.jpg)
 
 <!-- more -->
 
@@ -36,7 +36,7 @@ git push origin master -f
 ## 二、删除指定commit提交（非最后一次提交）
 
 图例：
-![Git](//tiven.cn/assets/img/img-git-commit-01.jpg)
+![Git](https://tiven.cn/static/img/img-git-commit-01-x25faB9jG9u_m7xUxh28f.jpg)
 
 *假定：* 现在我们要删除`commit--2`这条提交记录
 
@@ -69,7 +69,7 @@ git rebase -i 35f96e1
 * 把原本的 `pick` 单词修改为 `drop` 就表示该ID对应的 commit log 我们需要删除。
 * vim保存退出。
 
-![Git](//tiven.cn/assets/img/img-git-commit-02.png)
+![Git](https://tiven.cn/static/img/img-git-commit-02-JbyV5dXmPuE3pRQ66ofY_.jpg)
 
 
 3. 第三步：解决冲突，强制推送更新到远程
@@ -85,4 +85,4 @@ git push origin master -f
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/b87d03eb/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/b87d03eb/ "天問博客")

@@ -11,7 +11,7 @@ date: 2020-07-06 10:28:51
 1. Windows的`Shell`命令又是Windows的`CMD`命令。而cmd命令又是原来MS-DOS系统保留下来
 2. Windows Shell命令是基于配置好的Path环境变量，对Shell命令在Path路径中依次从前至后搜寻到对应命名的可执行入口
 
-![Shell](//tiven.cn/assets/img/img-shell.jpg)
+![Shell](https://tiven.cn/static/img/img-shell-FT96_YT5KdxO7VzMmkfLS.jpg)
 
 <!--more-->
 
@@ -55,4 +55,4 @@ dir
 
 ---
 
-欢迎访问：[个人博客地址](//tiven.cn/p/f8a10c7/ "天問博客")
+欢迎访问：[个人博客地址](https://tiven.cn/p/f8a10c7/ "天問博客")

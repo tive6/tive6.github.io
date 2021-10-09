@@ -7,7 +7,7 @@ tags:
   - node
 categories:
   - 学习笔记
-top: 6
+top: 4
 ---
 
 在实现`前端工程化`的过程中，经常需要在一个js脚本中去执行其他`node`/`npm`或者其他`shell`命令。本篇就介绍两种`node`调用`shell`的方法。

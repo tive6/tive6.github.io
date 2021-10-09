@@ -11,7 +11,7 @@ date: 2017-03-20 15:32:23
 ---
 前端技术在日新月异的变化着，`JavaScript`以其独特的优势，在编程上广泛被关注，被使用。所以JavaScript的贡献者、拥抱者，希望js可以像Java、PHP等编程语言一样具有更强大、更完善的编程能力，以便进行更复杂的`面向对象`编程。
 
-![Babel](//tiven.cn/assets/img/img-babel.jpg)
+![Babel](https://tiven.cn/static/img/img-babel-KsOKCz2TMAY0r-rgqzXq7.jpg)
 
 <!-- more -->
 为了面向对象统一化，加强化，js经历了`ES5`，正逐渐转向`ES6`、`ES7`的发展。ES6在语法格式以及使用上，与之前的规范相比有了很大的变化。

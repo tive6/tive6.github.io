@@ -12,7 +12,7 @@ top: 5
 `Markdown`是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，从而让文本`易读易写`，增强可读性。
 因此，Markdown被广泛的应用于`个人博客`、`Github`、`Coding`等具有大量文本的交流学习网站。
 
-![Markdown](//tiven.cn/assets/img/img-md.png)
+![Markdown](https://tiven.cn/static/img/img-md-nI00peiHeG7fhB0oDptue.jpg)
 
 <!--more-->
 
